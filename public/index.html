@@ -243,6 +243,41 @@ function getProjectColor(idx) {
   return PROJECT_COLORS[idx % PROJECT_COLORS.length];
 }
 
+// ── Project metadata (GitHub + Vercel links) ──
+const PROJECT_META = {
+  'quantum-crypto-three':       { gh: 'gewenbo888/quantum-crypto',        vercel: 'quantum-crypto-three.vercel.app',      label: 'Quantum Crypto' },
+  'tokendance':                 { gh: 'gewenbo888/TokenDance',            vercel: 'tokendance.vercel.app',                label: 'TokenDance' },
+  'gosu-yu':                    { gh: 'gewenbo888/gosu-yu',               vercel: 'gosu-yu.vercel.app',                   label: 'Gosu Yu 戈苏御' },
+  'three-regions':              { gh: 'gewenbo888/three-regions',         vercel: 'three-regions.vercel.app',             label: 'Three Regions' },
+  'civilizations-compared':     { gh: 'gewenbo888/civilizations-compared',vercel: 'civilizations-compared.vercel.app',    label: 'Civilizations Compared' },
+  'y-haplogroups':              { gh: 'gewenbo888/y-haplogroups',         vercel: 'y-haplogroups.vercel.app',             label: 'Y-Haplogroups' },
+  'tao-science':                { gh: 'gewenbo888/tao-science',           vercel: 'tao-science.vercel.app',               label: 'Tao & Science' },
+  'emerging-tech-nine':         { gh: 'gewenbo888/emerging-tech',         vercel: 'emerging-tech-nine.vercel.app',        label: 'Emerging Tech' },
+  'ai-tools-guide-henna':       { gh: 'gewenbo888/ai-tools-guide',        vercel: 'ai-tools-guide-henna.vercel.app',      label: 'AI Tools Guide' },
+};
+
+function getMeta(project) {
+  return PROJECT_META[project] || null;
+}
+
+function projectLinks(project, style) {
+  const m = getMeta(project);
+  if (!m) return '';
+  const s = style === 'inline'
+    ? 'display:inline-flex;gap:8px;font-size:.68rem;'
+    : 'display:flex;gap:10px;margin-top:8px;font-size:.72rem;';
+  return `<div style="${s}">
+    <a href="https://github.com/${m.gh}" target="_blank" rel="noopener" style="color:var(--dim);text-decoration:none;display:inline-flex;align-items:center;gap:4px;transition:color .2s;" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--dim)'">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      GitHub
+    </a>
+    <a href="https://${m.vercel}" target="_blank" rel="noopener" style="color:var(--dim);text-decoration:none;display:inline-flex;align-items:center;gap:4px;transition:color .2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--dim)'">
+      <svg width="13" height="13" viewBox="0 0 76 65" fill="currentColor"><path d="M37.5274 0L75.0548 65H0L37.5274 0Z"/></svg>
+      Live Site
+    </a>
+  </div>`;
+}
+
 // ── Set tracker URL ──
 const origin = location.origin;
 document.getElementById('trackerUrl').textContent = origin + '/tracker.js';
@@ -421,14 +456,20 @@ function renderOverview(data) {
       <div class="chart-title">Projects 项目列表</div>
       <div class="chart-subtitle">Click any project for detailed analytics 点击任意项目查看详细分析</div>
       <table class="data-table">
-        <thead><tr><th>Project</th><th>7-Day Trend</th><th>Today</th><th>Total</th></tr></thead>
+        <thead><tr><th>Project</th><th>7-Day Trend</th><th>Links 链接</th><th>Today</th><th>Total</th></tr></thead>
         <tbody>`;
 
   data.projects.forEach((p, i) => {
     const vals = p.last7.map(d => d.views);
+    const m = getMeta(p.project);
+    const label = m ? m.label : p.project;
+    const links = m
+      ? `<a href="https://github.com/${m.gh}" target="_blank" rel="noopener" title="GitHub" style="color:var(--dim);transition:color .15s;" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--dim)'"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>&nbsp;&nbsp;<a href="https://${m.vercel}" target="_blank" rel="noopener" title="Live Site" style="color:var(--dim);transition:color .15s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--dim)'"><svg width="13" height="13" viewBox="0 0 76 65" fill="currentColor"><path d="M37.5274 0L75.0548 65H0L37.5274 0Z"/></svg></a>`
+      : '';
     html += `<tr style="cursor:pointer" onclick="selectProject('${p.project}')">
-      <td><div class="bar-cell"><div class="pie-dot" style="background:${getProjectColor(i)}"></div>${p.project}</div></td>
+      <td><div class="bar-cell"><div class="pie-dot" style="background:${getProjectColor(i)}"></div>${label}</div></td>
       <td>${sparkline(vals, getProjectColor(i))}</td>
+      <td onclick="event.stopPropagation()" style="white-space:nowrap;">${links}</td>
       <td>${fmt(p.today)}</td>
       <td>${fmt(p.total)}</td>
     </tr>`;
@@ -444,11 +485,18 @@ function renderProject(data) {
 
   const yesterdayViews = data.daily.length >= 2 ? data.daily[data.daily.length - 2].views : 0;
 
+  const meta = getMeta(data.project);
+  const detailLabel = meta ? meta.label : data.project;
+
   let html = `
     <div class="dash-header">
       <div>
-        <h1>${data.project}</h1>
-        <div class="sub"><a href="#" onclick="selectProject('');return false;" style="color:var(--accent);text-decoration:none;">&larr; All Projects</a></div>
+        <h1>${detailLabel}</h1>
+        <div class="sub" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+          <a href="#" onclick="selectProject('');return false;" style="color:var(--accent);text-decoration:none;">&larr; All Projects</a>
+          ${meta ? `<a href="https://github.com/${meta.gh}" target="_blank" rel="noopener" style="color:var(--dim);text-decoration:none;display:inline-flex;align-items:center;gap:4px;font-size:.75rem;transition:color .2s;" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--dim)'"><svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a>` : ''}
+          ${meta ? `<a href="https://${meta.vercel}" target="_blank" rel="noopener" style="color:var(--dim);text-decoration:none;display:inline-flex;align-items:center;gap:4px;font-size:.75rem;transition:color .2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--dim)'"><svg width="12" height="12" viewBox="0 0 76 65" fill="currentColor"><path d="M37.5274 0L75.0548 65H0L37.5274 0Z"/></svg> Live Site</a>` : ''}
+        </div>
       </div>
     </div>
     <div class="stats-row">
@@ -570,13 +618,15 @@ async function init() {
   // Populate sidebar
   const container = document.getElementById('sidebarProjects');
   if (data && data.projects && data.projects.length) {
-    container.innerHTML = data.projects.map((p, i) =>
-      `<div class="sb-item" data-project="${p.project}" onclick="selectProject('${p.project}')">
+    container.innerHTML = data.projects.map((p, i) => {
+      const m = getMeta(p.project);
+      const label = m ? m.label : p.project;
+      return `<div class="sb-item" data-project="${p.project}" onclick="selectProject('${p.project}')">
         <div class="sb-dot" style="background:${getProjectColor(i)}"></div>
-        ${p.project}
+        ${label}
         <span class="sb-count">${fmt(p.total)}</span>
-      </div>`
-    ).join('');
+      </div>`;
+    }).join('');
   } else {
     container.innerHTML = '<div class="sb-item" style="color:var(--dim);font-size:.75rem;">No projects yet</div>';
   }
