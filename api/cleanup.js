@@ -8,12 +8,16 @@ export default async function handler(req) {
   }
 
   try {
+    const url = new URL(req.url);
+    const removeList = url.searchParams.get('remove');
+    const explicitRemove = removeList ? removeList.split(',') : [];
+
     const projects = await kv.smembers('projects');
     const removed = [];
 
     for (const p of projects) {
-      // Remove entries that look like Vercel preview deployments
-      if (p.match(/-[a-z0-9]{7,}-.*projects$/) || p.match(/-deploy-/)) {
+      // Remove entries that look like Vercel preview deployments, or explicitly listed
+      if (p.match(/-[a-z0-9]{7,}-.*projects$/) || p.match(/-deploy-/) || explicitRemove.includes(p)) {
         // Remove from projects set
         await kv.srem('projects', p);
 
