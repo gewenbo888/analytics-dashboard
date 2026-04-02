@@ -22,7 +22,15 @@ export default async function handler(req) {
     const now = new Date();
     const dateKey = now.toISOString().slice(0, 10); // YYYY-MM-DD
     const hourKey = now.toISOString().slice(0, 13);  // YYYY-MM-DDTHH
-    const project = hostname.replace(/\.vercel\.app$/, '').replace(/[^a-zA-Z0-9-]/g, '_');
+    // Normalize Vercel preview hostnames:
+    // "myapp-abc123xyz-username-projects.vercel.app" → "myapp"
+    // "myapp.vercel.app" → "myapp"
+    let project = hostname.replace(/\.vercel\.app$/, '');
+    // Strip Vercel preview hash + team suffix (e.g. "-abc123-team-projects")
+    project = project.replace(/-[a-z0-9]{7,}-[a-z0-9]+-projects$/, '');
+    // Also strip deploy prefix patterns (e.g. "myapp-deploy-abc123-team-projects")
+    project = project.replace(/-deploy-[a-z0-9]+-[a-z0-9]+-projects$/, '');
+    project = project.replace(/[^a-zA-Z0-9-]/g, '_');
 
     // Use pipeline for atomic multi-command
     const pipe = kv.pipeline();
