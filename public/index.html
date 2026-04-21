@@ -193,7 +193,13 @@ body{
 
 <!-- ═══ SIDEBAR ═══ -->
 <aside class="sidebar" id="sidebar">
-  <div class="sb-logo"><div class="dot"></div><span>Analytics</span></div>
+  <div class="sb-logo">
+    <div class="dot"></div>
+    <div style="display:flex;flex-direction:column;gap:2px;line-height:1;">
+      <span>Analytics</span>
+      <a href="https://dashboard.psyverse.fun" style="font-family:'JetBrains Mono',monospace;font-size:.56rem;color:var(--dim);letter-spacing:.04em;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--dim)'">dashboard.psyverse.fun</a>
+    </div>
+  </div>
   <div class="sb-section">
     <div class="sb-section-title">Overview 总览</div>
     <div class="sb-item active" data-project="" onclick="selectProject('')" style="cursor:pointer;">
@@ -211,7 +217,13 @@ body{
 
 <!-- ═══ MAIN ═══ -->
 <main class="main">
-  <div class="mobile-header"><div class="dot"></div><span>Analytics Dashboard</span></div>
+  <div class="mobile-header">
+    <div class="dot"></div>
+    <div style="display:flex;flex-direction:column;gap:2px;line-height:1;">
+      <span>Analytics Dashboard</span>
+      <a href="https://dashboard.psyverse.fun" style="font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--dim);letter-spacing:.04em;text-decoration:none;">dashboard.psyverse.fun</a>
+    </div>
+  </div>
   <div id="dashContent">
     <div class="loading"><div class="spinner"></div>Loading analytics data...</div>
   </div>
