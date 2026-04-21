@@ -2,6 +2,41 @@ import { kv } from '@vercel/kv';
 
 export const config = { runtime: 'edge' };
 
+// psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
+const PSYVERSE_MAP = {
+  'psyverse.fun':             'gewenbo-manifesto',
+  'manifesto.psyverse.fun':   'gewenbo-manifesto',
+  'hub.psyverse.fun':         'gewenbo-hub',
+  'links.psyverse.fun':       'gewenbo-links',
+  'blog.psyverse.fun':        'gewenbo-blog',
+  'store.psyverse.fun':       'gewenbo-store',
+  'atlas.psyverse.fun':       'global-atlas-lake',
+  'civilizations.psyverse.fun':'civilizations-compared',
+  'regions.psyverse.fun':     'three-regions',
+  'roads.psyverse.fun':       'three-roads-agi',
+  'tao.psyverse.fun':         'tao-science',
+  'tech.psyverse.fun':        'emerging-tech-nine',
+  'aitools.psyverse.fun':     'ai-tools-guide-henna',
+  'insights.psyverse.fun':    'ai-insights-beta',
+  'researchers.psyverse.fun': 'chinese-ai-researchers',
+  'agi.psyverse.fun':         'agi-research-seven',
+  'string.psyverse.fun':      'web-topaz-two-62',
+  'evolution.psyverse.fun':   'evolution-ai-six',
+  'levels.psyverse.fun':      'tech-levels',
+  'brain.psyverse.fun':       'brain-atlas-ten',
+  'autoresearch.psyverse.fun':'autoresearch-showcase',
+  'prompts.psyverse.fun':     'prompt-vault-two-sooty',
+  'wiki.psyverse.fun':        'llm-wiki-snowy',
+  'triangle.psyverse.fun':    'impossible-triangle-lemon',
+  'names.psyverse.fun':       'chinese-name-gen',
+  'island.psyverse.fun':      'island-gun-king',
+  'highway.psyverse.fun':     'prototype-indol-five',
+  'haplo.psyverse.fun':       'y-haplogroups',
+  'quantum.psyverse.fun':     'quantum-crypto-three',
+  'dance.psyverse.fun':       'tokendance',
+  'gosu.psyverse.fun':        'gosu-yu',
+};
+
 export default async function handler(req) {
   if (req.method === 'OPTIONS') {
     return new Response(null, { status: 204 });
@@ -22,17 +57,19 @@ export default async function handler(req) {
     const now = new Date();
     const dateKey = now.toISOString().slice(0, 10); // YYYY-MM-DD
     const hourKey = now.toISOString().slice(0, 13);  // YYYY-MM-DDTHH
-    // Normalize Vercel preview hostnames:
-    // "myapp-abc123-gewenbo888s-projects.vercel.app" → "myapp"
-    // "myapp.vercel.app" → "myapp"
-    let project = hostname.replace(/\.vercel\.app$/, '');
-    // Catch-all: strip anything ending with "-gewenbo888s-projects" (covers all preview patterns)
-    project = project.replace(/-[a-z0-9]+-gewenbo888s-projects$/, '');
-    // Also strip just the team suffix if present
-    project = project.replace(/-gewenbo888s-projects$/, '');
-    // Catch deploy prefix patterns
-    project = project.replace(/-deploy-.*$/, '');
-    project = project.replace(/[^a-zA-Z0-9-]/g, '_');
+    // Normalize hostnames to canonical project key.
+    // 1) psyverse.fun subdomains → canonical key from PSYVERSE_MAP
+    // 2) *.vercel.app → strip .vercel.app + preview/deploy suffixes
+    let project;
+    if (PSYVERSE_MAP[hostname]) {
+      project = PSYVERSE_MAP[hostname];
+    } else {
+      project = hostname.replace(/\.vercel\.app$/, '');
+      project = project.replace(/-[a-z0-9]+-gewenbo888s-projects$/, '');
+      project = project.replace(/-gewenbo888s-projects$/, '');
+      project = project.replace(/-deploy-.*$/, '');
+      project = project.replace(/[^a-zA-Z0-9-]/g, '_');
+    }
 
     // Use pipeline for atomic multi-command
     const pipe = kv.pipeline();
