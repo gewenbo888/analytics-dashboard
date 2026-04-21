@@ -243,40 +243,40 @@ function getProjectColor(idx) {
   return PROJECT_COLORS[idx % PROJECT_COLORS.length];
 }
 
-// ── Project metadata (GitHub + Vercel links) ──
+// ── Project metadata (GitHub + Vercel + Custom psyverse.fun links) ──
 const PROJECT_META = {
-  'quantum-crypto-three':       { gh: 'gewenbo888/quantum-crypto',        vercel: 'quantum.psyverse.fun',      label: 'Quantum Crypto' },
-  'tokendance':                 { gh: 'gewenbo888/TokenDance',            vercel: 'dance.psyverse.fun',                label: 'TokenDance' },
-  'gosu-yu':                    { gh: 'gewenbo888/gosu-yu',               vercel: 'gosu.psyverse.fun',                   label: 'Gosu Yu 戈苏御' },
-  'three-regions':              { gh: 'gewenbo888/three-regions',         vercel: 'regions.psyverse.fun',             label: 'Three Regions' },
-  'civilizations-compared':     { gh: 'gewenbo888/civilizations-compared',vercel: 'civilizations.psyverse.fun',    label: 'Civilizations Compared' },
-  'y-haplogroups':              { gh: 'gewenbo888/y-haplogroups',         vercel: 'haplo.psyverse.fun',             label: 'Y-Haplogroups' },
-  'tao-science':                { gh: 'gewenbo888/tao-science',           vercel: 'tao.psyverse.fun',               label: 'Tao & Science' },
-  'emerging-tech-nine':         { gh: 'gewenbo888/emerging-tech',         vercel: 'tech.psyverse.fun',        label: 'Emerging Tech' },
-  'ai-tools-guide-henna':       { gh: 'gewenbo888/ai-tools-guide',        vercel: 'aitools.psyverse.fun',      label: 'AI Tools Guide' },
-  'island-gun-king':            { gh: 'gewenbo888/island-gun-king',       vercel: 'island.psyverse.fun',           label: 'Island Gun King' },
-  'prototype-indol-five':       { gh: 'gewenbo888/lonely-highway',        vercel: 'highway.psyverse.fun',      label: 'Lonely Highway' },
-  'chinese-ai-researchers':     { gh: 'gewenbo888/chinese-ai-researchers',vercel: 'researchers.psyverse.fun',    label: 'Chinese AI Researchers' },
-  'agi-research-seven':         { gh: 'gewenbo888/agi-research',          vercel: 'agi.psyverse.fun',        label: 'AGI Research' },
-  'web-topaz-two-62':           { gh: 'gewenbo888/StringTheoryAI',        vercel: 'string.psyverse.fun',          label: 'StringTheoryAI' },
-  'evolution-ai-six':           { gh: 'gewenbo888/EvolutionAI',           vercel: 'evolution.psyverse.fun',          label: 'EvolutionAI' },
-  'ai-insights-beta':           { gh: 'gewenbo888/ai-insights',           vercel: 'insights.psyverse.fun',          label: 'AI Insights' },
-  'tech-levels':                { gh: 'gewenbo888/tech-levels',           vercel: 'levels.psyverse.fun',               label: 'Tech Levels L1–L5' },
-  'gewenbo-hub':                { gh: 'gewenbo888/gewenbo-hub',           vercel: 'hub.psyverse.fun',               label: 'Gewenbo Hub' },
-  'gewenbo-links':              { gh: 'gewenbo888/gewenbo-links',         vercel: 'links.psyverse.fun',             label: 'Link in Bio' },
-  'gewenbo-blog':               { gh: 'gewenbo888/gewenbo-blog',          vercel: 'blog.psyverse.fun',              label: 'Blog' },
-  'gewenbo-store':              { gh: 'gewenbo888/gewenbo-store',         vercel: 'store.psyverse.fun',             label: 'Store' },
-  'brain-atlas-ten':            { gh: 'gewenbo888/brain-atlas',           vercel: 'brain.psyverse.fun',           label: 'Brain Atlas' },
-  'autoresearch-showcase':      { gh: 'gewenbo888/autoresearch-showcase', vercel: 'autoresearch.psyverse.fun',     label: 'Autoresearch' },
-  'prompt-vault-two-sooty':     { gh: 'gewenbo888/prompt-vault',          vercel: 'prompts.psyverse.fun',    label: 'Prompt Vault' },
-  'three-roads-agi':            { gh: 'gewenbo888/three-roads-agi',       vercel: 'roads.psyverse.fun',           label: 'Three Roads to AGI' },
-  'llm-wiki-snowy':             { gh: 'gewenbo888/llm-wiki',              vercel: 'wiki.psyverse.fun',            label: 'LLM Wiki' },
-  'impossible-triangle-lemon':  { gh: 'gewenbo888/impossible-triangle',   vercel: 'triangle.psyverse.fun', label: 'Impossible Triangle' },
-  'impossible-triangle':        { gh: 'gewenbo888/impossible-triangle',   vercel: 'triangle.psyverse.fun', label: 'Impossible Triangle' },
-  'chinese-name-gen':           { gh: 'gewenbo888/chinese-name-gen',      vercel: 'names.psyverse.fun',          label: 'Chinese Name Generator' },
-  'chinese-name':               { gh: 'gewenbo888/chinese-name-gen',      vercel: 'names.psyverse.fun',          label: 'Chinese Name Generator' },
-  'global-atlas-lake':          { gh: 'gewenbo888/global-atlas',          vercel: 'atlas.psyverse.fun',         label: 'Global Atlas 寰宇图志' },
-  'gewenbo-manifesto':          { gh: 'gewenbo888/gewenbo-manifesto',     vercel: 'psyverse.fun',         label: 'Manifesto 一使命' },
+  'quantum-crypto-three':       { gh: 'gewenbo888/quantum-crypto',        vercel: 'quantum-crypto-three.vercel.app',      custom: 'quantum.psyverse.fun',      label: 'Quantum Crypto' },
+  'tokendance':                 { gh: 'gewenbo888/TokenDance',            vercel: 'tokendance.vercel.app',                custom: 'dance.psyverse.fun',        label: 'TokenDance' },
+  'gosu-yu':                    { gh: 'gewenbo888/gosu-yu',               vercel: 'gosu-yu.vercel.app',                   custom: 'gosu.psyverse.fun',         label: 'Gosu Yu 戈苏御' },
+  'three-regions':              { gh: 'gewenbo888/three-regions',         vercel: 'three-regions.vercel.app',             custom: 'regions.psyverse.fun',      label: 'Three Regions' },
+  'civilizations-compared':     { gh: 'gewenbo888/civilizations-compared',vercel: 'civilizations-compared.vercel.app',    custom: 'civilizations.psyverse.fun',label: 'Civilizations Compared' },
+  'y-haplogroups':              { gh: 'gewenbo888/y-haplogroups',         vercel: 'y-haplogroups.vercel.app',             custom: 'haplo.psyverse.fun',        label: 'Y-Haplogroups' },
+  'tao-science':                { gh: 'gewenbo888/tao-science',           vercel: 'tao-science.vercel.app',               custom: 'tao.psyverse.fun',          label: 'Tao & Science' },
+  'emerging-tech-nine':         { gh: 'gewenbo888/emerging-tech',         vercel: 'emerging-tech-nine.vercel.app',        custom: 'tech.psyverse.fun',         label: 'Emerging Tech' },
+  'ai-tools-guide-henna':       { gh: 'gewenbo888/ai-tools-guide',        vercel: 'ai-tools-guide-henna.vercel.app',      custom: 'aitools.psyverse.fun',      label: 'AI Tools Guide' },
+  'island-gun-king':            { gh: 'gewenbo888/island-gun-king',       vercel: 'island-gun-king.vercel.app',           custom: 'island.psyverse.fun',       label: 'Island Gun King' },
+  'prototype-indol-five':       { gh: 'gewenbo888/lonely-highway',        vercel: 'prototype-indol-five.vercel.app',      custom: 'highway.psyverse.fun',      label: 'Lonely Highway' },
+  'chinese-ai-researchers':     { gh: 'gewenbo888/chinese-ai-researchers',vercel: 'chinese-ai-researchers.vercel.app',    custom: 'researchers.psyverse.fun',  label: 'Chinese AI Researchers' },
+  'agi-research-seven':         { gh: 'gewenbo888/agi-research',          vercel: 'agi-research-seven.vercel.app',        custom: 'agi.psyverse.fun',          label: 'AGI Research' },
+  'web-topaz-two-62':           { gh: 'gewenbo888/StringTheoryAI',        vercel: 'web-topaz-two-62.vercel.app',          custom: 'string.psyverse.fun',       label: 'StringTheoryAI' },
+  'evolution-ai-six':           { gh: 'gewenbo888/EvolutionAI',           vercel: 'evolution-ai-six.vercel.app',          custom: 'evolution.psyverse.fun',    label: 'EvolutionAI' },
+  'ai-insights-beta':           { gh: 'gewenbo888/ai-insights',           vercel: 'ai-insights-beta.vercel.app',          custom: 'insights.psyverse.fun',     label: 'AI Insights' },
+  'tech-levels':                { gh: 'gewenbo888/tech-levels',           vercel: 'tech-levels.vercel.app',               custom: 'levels.psyverse.fun',       label: 'Tech Levels L1–L5' },
+  'gewenbo-hub':                { gh: 'gewenbo888/gewenbo-hub',           vercel: 'gewenbo-hub.vercel.app',               custom: 'hub.psyverse.fun',          label: 'Gewenbo Hub' },
+  'gewenbo-links':              { gh: 'gewenbo888/gewenbo-links',         vercel: 'gewenbo-links.vercel.app',             custom: 'links.psyverse.fun',        label: 'Link in Bio' },
+  'gewenbo-blog':               { gh: 'gewenbo888/gewenbo-blog',          vercel: 'gewenbo-blog.vercel.app',              custom: 'blog.psyverse.fun',         label: 'Blog' },
+  'gewenbo-store':              { gh: 'gewenbo888/gewenbo-store',         vercel: 'gewenbo-store.vercel.app',             custom: 'store.psyverse.fun',        label: 'Store' },
+  'brain-atlas-ten':            { gh: 'gewenbo888/brain-atlas',           vercel: 'brain-atlas-ten.vercel.app',           custom: 'brain.psyverse.fun',        label: 'Brain Atlas' },
+  'autoresearch-showcase':      { gh: 'gewenbo888/autoresearch-showcase', vercel: 'autoresearch-showcase.vercel.app',     custom: 'autoresearch.psyverse.fun', label: 'Autoresearch' },
+  'prompt-vault-two-sooty':     { gh: 'gewenbo888/prompt-vault',          vercel: 'prompt-vault-two-sooty.vercel.app',    custom: 'prompts.psyverse.fun',      label: 'Prompt Vault' },
+  'three-roads-agi':            { gh: 'gewenbo888/three-roads-agi',       vercel: 'three-roads-agi.vercel.app',           custom: 'roads.psyverse.fun',        label: 'Three Roads to AGI' },
+  'llm-wiki-snowy':             { gh: 'gewenbo888/llm-wiki',              vercel: 'llm-wiki-snowy.vercel.app',            custom: 'wiki.psyverse.fun',         label: 'LLM Wiki' },
+  'impossible-triangle-lemon':  { gh: 'gewenbo888/impossible-triangle',   vercel: 'impossible-triangle-lemon.vercel.app', custom: 'triangle.psyverse.fun',     label: 'Impossible Triangle' },
+  'impossible-triangle':        { gh: 'gewenbo888/impossible-triangle',   vercel: 'impossible-triangle-lemon.vercel.app', custom: 'triangle.psyverse.fun',     label: 'Impossible Triangle' },
+  'chinese-name-gen':           { gh: 'gewenbo888/chinese-name-gen',      vercel: 'chinese-name-gen.vercel.app',          custom: 'names.psyverse.fun',        label: 'Chinese Name Generator' },
+  'chinese-name':               { gh: 'gewenbo888/chinese-name-gen',      vercel: 'chinese-name-gen.vercel.app',          custom: 'names.psyverse.fun',        label: 'Chinese Name Generator' },
+  'global-atlas-lake':          { gh: 'gewenbo888/global-atlas',          vercel: 'global-atlas-lake.vercel.app',         custom: 'atlas.psyverse.fun',        label: 'Global Atlas 寰宇图志' },
+  'gewenbo-manifesto':          { gh: 'gewenbo888/gewenbo-manifesto',     vercel: 'gewenbo-manifesto.vercel.app',         custom: 'psyverse.fun',              label: 'Manifesto 一使命' },
 };
 
 function getMeta(project) {
@@ -298,6 +298,10 @@ function projectLinks(project, style) {
       <svg width="13" height="13" viewBox="0 0 76 65" fill="currentColor"><path d="M37.5274 0L75.0548 65H0L37.5274 0Z"/></svg>
       Live Site
     </a>
+    ${m.custom ? `<a href="https://${m.custom}" target="_blank" rel="noopener" style="color:var(--dim);text-decoration:none;display:inline-flex;align-items:center;gap:4px;transition:color .2s;" onmouseover="this.style.color='#c9a24b'" onmouseout="this.style.color='var(--dim)'">
+      <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm-.02 11.5L4.5 8.02l1.4-1.4 2.08 2.08L12.1 4.5l1.4 1.4-5.52 5.6z"/></svg>
+      ${m.custom}
+    </a>` : ''}
   </div>`;
 }
 
