@@ -35,6 +35,7 @@ const PSYVERSE_MAP = {
   'quantum.psyverse.fun':     'quantum-crypto-three',
   'dance.psyverse.fun':       'tokendance',
   'gosu.psyverse.fun':        'gosu-yu',
+  'libertarian.psyverse.fun': 'libertarian',
 };
 
 export default async function handler(req) {
