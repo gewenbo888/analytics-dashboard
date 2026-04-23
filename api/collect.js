@@ -38,6 +38,7 @@ const PSYVERSE_MAP = {
   'libertarian.psyverse.fun': 'libertarian',
   'kol.psyverse.fun':         'crypto-kol',
   'mindseye.psyverse.fun':    'mindseye',
+  'cnkol.psyverse.fun':       'chinese-crypto-kols',
 };
 
 export default async function handler(req) {
