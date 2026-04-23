@@ -37,6 +37,7 @@ const PSYVERSE_MAP = {
   'gosu.psyverse.fun':        'gosu-yu',
   'libertarian.psyverse.fun': 'libertarian',
   'kol.psyverse.fun':         'crypto-kol',
+  'mindseye.psyverse.fun':    'mindseye',
 };
 
 export default async function handler(req) {
