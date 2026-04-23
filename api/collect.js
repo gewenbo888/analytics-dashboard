@@ -39,6 +39,7 @@ const PSYVERSE_MAP = {
   'kol.psyverse.fun':         'crypto-kol',
   'mindseye.psyverse.fun':    'mindseye',
   'cnkol.psyverse.fun':       'chinese-crypto-kols',
+  'skills.psyverse.fun':      'skills-showcase',
 };
 
 export default async function handler(req) {
