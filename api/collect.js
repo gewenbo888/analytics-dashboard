@@ -41,6 +41,7 @@ const PSYVERSE_MAP = {
   'cnkol.psyverse.fun':       'chinese-crypto-kols',
   'skills.psyverse.fun':      'skills-showcase',
   'llms.psyverse.fun':        'llm-models',
+  'aiapps.psyverse.fun':      'ai-apps-rank',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
