@@ -43,6 +43,16 @@ const PSYVERSE_MAP = {
   'llms.psyverse.fun':        'llm-models',
 };
 
+// vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
+// Without this, visits to the bare vercel.app URL get logged under the suffixed name
+// and the dashboard can't find PROJECT_META. Added retroactively April 2026.
+const VERCEL_MAP = {
+  'libertarian-jade.vercel.app':       'libertarian',
+  'mindseye-kappa.vercel.app':         'mindseye',
+  'skills-showcase-livid.vercel.app':  'skills-showcase',
+  'llm-models-mu.vercel.app':          'llm-models',
+};
+
 export default async function handler(req) {
   if (req.method === 'OPTIONS') {
     return new Response(null, { status: 204 });
@@ -69,6 +79,8 @@ export default async function handler(req) {
     let project;
     if (PSYVERSE_MAP[hostname]) {
       project = PSYVERSE_MAP[hostname];
+    } else if (VERCEL_MAP[hostname]) {
+      project = VERCEL_MAP[hostname];
     } else {
       project = hostname.replace(/\.vercel\.app$/, '');
       project = project.replace(/-[a-z0-9]+-gewenbo888s-projects$/, '');
