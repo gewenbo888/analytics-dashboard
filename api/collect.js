@@ -40,6 +40,7 @@ const PSYVERSE_MAP = {
   'mindseye.psyverse.fun':    'mindseye',
   'cnkol.psyverse.fun':       'chinese-crypto-kols',
   'skills.psyverse.fun':      'skills-showcase',
+  'llms.psyverse.fun':        'llm-models',
 };
 
 export default async function handler(req) {
