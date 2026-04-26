@@ -53,6 +53,7 @@ const PSYVERSE_MAP = {
   'langbrain.psyverse.fun':   'langbrain',
   'agents.psyverse.fun':      'agents-rank',
   'figures.psyverse.fun':     'figures-rank',
+  'arena.psyverse.fun':       'ai-arena',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
@@ -63,6 +64,7 @@ const VERCEL_MAP = {
   'mindseye-kappa.vercel.app':         'mindseye',
   'skills-showcase-livid.vercel.app':  'skills-showcase',
   'llm-models-mu.vercel.app':          'llm-models',
+  'ai-arena-olive.vercel.app':         'ai-arena',
 };
 
 export default async function handler(req) {
