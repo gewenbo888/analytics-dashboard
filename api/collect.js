@@ -55,6 +55,7 @@ const PSYVERSE_MAP = {
   'figures.psyverse.fun':     'figures-rank',
   'arena.psyverse.fun':       'ai-arena',
   'psy.psyverse.fun':         'psy-protocol-site',
+  'idc.psyverse.fun':         'china-idc-ranking',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
