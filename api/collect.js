@@ -63,6 +63,7 @@ const PSYVERSE_MAP = {
   'warp.psyverse.fun':        'curvature-engine',
   'apes.psyverse.fun':        'apes-comparison',
   'innovators.psyverse.fun':  'innovators-atlas',
+  'seeker.psyverse.fun':      'the-seeker',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
@@ -74,6 +75,7 @@ const VERCEL_MAP = {
   'skills-showcase-livid.vercel.app':  'skills-showcase',
   'llm-models-mu.vercel.app':          'llm-models',
   'ai-arena-olive.vercel.app':         'ai-arena',
+  'the-seeker-psi.vercel.app':         'the-seeker',
 };
 
 export default async function handler(req) {
