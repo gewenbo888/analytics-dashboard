@@ -70,6 +70,7 @@ const PSYVERSE_MAP = {
   'omega.psyverse.fun':       'omega-engine',
   'urcde.psyverse.fun':       'urcde-engine',
   'mindatlas.psyverse.fun':   'atlas-of-mind',
+  'tools.psyverse.fun':       'tool-hub',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
@@ -82,6 +83,7 @@ const VERCEL_MAP = {
   'llm-models-mu.vercel.app':          'llm-models',
   'ai-arena-olive.vercel.app':         'ai-arena',
   'the-seeker-psi.vercel.app':         'the-seeker',
+  'tool-hub-red.vercel.app':           'tool-hub',
 };
 
 export default async function handler(req) {
