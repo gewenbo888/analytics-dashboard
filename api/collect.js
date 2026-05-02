@@ -66,6 +66,7 @@ const PSYVERSE_MAP = {
   'seeker.psyverse.fun':      'the-seeker',
   'staples.psyverse.fun':     'staple-foods-atlas',
   'chains.psyverse.fun':      'blockchain-performance-atlas',
+  'minds.psyverse.fun':       'thinking-styles-atlas',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
