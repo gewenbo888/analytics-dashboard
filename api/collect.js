@@ -71,6 +71,7 @@ const PSYVERSE_MAP = {
   'urcde.psyverse.fun':       'urcde-engine',
   'mindatlas.psyverse.fun':   'atlas-of-mind',
   'tools.psyverse.fun':       'tool-hub',
+  'aha.psyverse.fun':         'aha-psyverse',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
