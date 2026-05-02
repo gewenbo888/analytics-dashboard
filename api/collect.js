@@ -61,6 +61,7 @@ const PSYVERSE_MAP = {
   'humanoids.psyverse.fun':   'humanoid-robots-ranking',
   'av.psyverse.fun':          'autonomous-driving-ranking',
   'warp.psyverse.fun':        'curvature-engine',
+  'apes.psyverse.fun':        'apes-comparison',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
