@@ -113,6 +113,11 @@ export default async function handler(req) {
       return new Response(JSON.stringify({ error: 'hostname required' }), { status: 400 });
     }
 
+    // Skip local development hostnames so they don't pollute the dashboard
+    if (hostname === 'localhost' || hostname === '127.0.0.1' || hostname.endsWith('.local')) {
+      return new Response(JSON.stringify({ ok: true, skipped: 'local' }), { status: 200 });
+    }
+
     const now = new Date();
     const dateKey = now.toISOString().slice(0, 10); // YYYY-MM-DD
     const hourKey = now.toISOString().slice(0, 13);  // YYYY-MM-DDTHH
