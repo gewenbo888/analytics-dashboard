@@ -80,6 +80,7 @@ const PSYVERSE_MAP = {
   'reality.psyverse.fun':     'reality-explorer',
   'ethics-engine.psyverse.fun': 'ethics-engine',
   'humanity-os.psyverse.fun': 'humanity-os',
+  'truth.psyverse.fun':       'truth-engine',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
@@ -94,6 +95,7 @@ const VERCEL_MAP = {
   'the-seeker-psi.vercel.app':         'the-seeker',
   'tool-hub-red.vercel.app':           'tool-hub',
   'mind-arena-three.vercel.app':       'mind-arena',
+  'truth-engine-alpha.vercel.app':     'truth-engine',
 };
 
 export default async function handler(req) {
