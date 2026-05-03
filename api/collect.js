@@ -74,6 +74,7 @@ const PSYVERSE_MAP = {
   'aha.psyverse.fun':         'aha-psyverse',
   'ledger.psyverse.fun':      'ledger-psyverse',
   'cognition-gym.psyverse.fun': 'cognition-gym',
+  'mirror.psyverse.fun':      'humanity-mirror',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
