@@ -76,6 +76,7 @@ const PSYVERSE_MAP = {
   'cognition-gym.psyverse.fun': 'cognition-gym',
   'mirror.psyverse.fun':      'humanity-mirror',
   'mind-arena.psyverse.fun':  'mind-arena',
+  'reality.psyverse.fun':     'reality-explorer',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
