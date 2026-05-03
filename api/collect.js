@@ -82,6 +82,7 @@ const PSYVERSE_MAP = {
   'humanity-os.psyverse.fun': 'humanity-os',
   'truth.psyverse.fun':       'truth-engine',
   'market.psyverse.fun':      'intelligence-market',
+  'sim.psyverse.fun':         'simulation-universe',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
