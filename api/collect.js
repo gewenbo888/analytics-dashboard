@@ -88,6 +88,7 @@ const PSYVERSE_MAP = {
   'time.psyverse.fun':        'time-machine',
   'knowledge-os.psyverse.fun':'knowledge-os',
   'influence-os.psyverse.fun':'influence-os',
+  'uncertainty-os.psyverse.fun':'uncertainty-os',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
