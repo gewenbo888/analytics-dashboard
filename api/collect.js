@@ -77,6 +77,7 @@ const PSYVERSE_MAP = {
   'mirror.psyverse.fun':      'humanity-mirror',
   'mind-arena.psyverse.fun':  'mind-arena',
   'reality.psyverse.fun':     'reality-explorer',
+  'ethics-engine.psyverse.fun': 'ethics-engine',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
