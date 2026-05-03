@@ -90,6 +90,7 @@ const PSYVERSE_MAP = {
   'knowledge-os.psyverse.fun':'knowledge-os',
   'influence-os.psyverse.fun':'influence-os',
   'uncertainty-os.psyverse.fun':'uncertainty-os',
+  'blockchain-atlas.psyverse.fun':'blockchain-atlas',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
