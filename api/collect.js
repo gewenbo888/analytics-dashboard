@@ -85,6 +85,7 @@ const PSYVERSE_MAP = {
   'sim.psyverse.fun':         'simulation-universe',
   'attention.psyverse.fun':   'attention-os',
   'meaning.psyverse.fun':     'meaning-engine',
+  'time.psyverse.fun':        'time-machine',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
@@ -102,6 +103,7 @@ const VERCEL_MAP = {
   'truth-engine-alpha.vercel.app':     'truth-engine',
   'attention-os-eta.vercel.app':       'attention-os',
   'meaning-engine-rho.vercel.app':     'meaning-engine',
+  'time-machine-vert-theta.vercel.app':'time-machine',
 };
 
 export default async function handler(req) {
