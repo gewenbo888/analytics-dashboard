@@ -95,6 +95,7 @@ const PSYVERSE_MAP = {
   'ge.psyverse.fun':          'ge-clan-atlas',
   'jin-atlas.psyverse.fun':   'jin-atlas',
   'surnames.psyverse.fun':    'surname-atlas',
+  'grassland.psyverse.fun':   'grassland-atlas',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
