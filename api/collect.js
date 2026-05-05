@@ -76,6 +76,7 @@ const PSYVERSE_MAP = {
   'ideaspace.psyverse.fun':   'ideaspace-psyverse',
   'convergence.psyverse.fun': 'convergence-psyverse',
   'chainmind.psyverse.fun':   'chainmind-psyverse',
+  'architect.psyverse.fun':   'architect-psyverse',
   'cognition-gym.psyverse.fun': 'cognition-gym',
   'mirror.psyverse.fun':      'humanity-mirror',
   'mind-arena.psyverse.fun':  'mind-arena',
