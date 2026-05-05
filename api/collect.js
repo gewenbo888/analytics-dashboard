@@ -99,6 +99,7 @@ const PSYVERSE_MAP = {
   'grassland.psyverse.fun':   'grassland-atlas',
   'org.psyverse.fun':         'organization-atlas',
   'chain.psyverse.fun':       'chain-essence',
+  'signal.psyverse.fun':      'signal-os',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
