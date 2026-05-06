@@ -92,6 +92,7 @@ const PSYVERSE_MAP = {
   'knowledge-os.psyverse.fun':'knowledge-os',
   'influence-os.psyverse.fun':'influence-os',
   'uncertainty-os.psyverse.fun':'uncertainty-os',
+  'strategy-os.psyverse.fun':  'strategy-os',
   'emotion-os.psyverse.fun':'emotion-os',
   'blockchain-atlas.psyverse.fun':'blockchain-atlas',
   'ge.psyverse.fun':          'ge-clan-atlas',
