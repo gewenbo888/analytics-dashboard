@@ -115,6 +115,7 @@ const PSYVERSE_MAP = {
   'human-future-atlas.psyverse.fun':   'human-future-atlas',
   'oceanic-civilization.psyverse.fun': 'oceanic-civilization',
   'the-human-library.psyverse.fun':    'the-human-library',
+  'yellow-river-frontier.psyverse.fun':'yellow-river-frontier',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
