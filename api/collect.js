@@ -113,6 +113,7 @@ const PSYVERSE_MAP = {
   'southward-migration.psyverse.fun':  'southward-migration',
   'steppe-empire.psyverse.fun':        'steppe-empire',
   'human-future-atlas.psyverse.fun':   'human-future-atlas',
+  'climate-civilization.psyverse.fun': 'climate-civilization',
   'oceanic-civilization.psyverse.fun': 'oceanic-civilization',
   'the-human-library.psyverse.fun':    'the-human-library',
   'yellow-river-frontier.psyverse.fun':'yellow-river-frontier',
