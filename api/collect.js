@@ -104,6 +104,7 @@ const PSYVERSE_MAP = {
   'chain.psyverse.fun':       'chain-essence',
   'signal.psyverse.fun':      'signal-os',
   'parenting-os.psyverse.fun':'parenting-os',
+  'mindforge.psyverse.fun':   'mindforge',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
@@ -123,6 +124,7 @@ const VERCEL_MAP = {
   'meaning-engine-rho.vercel.app':     'meaning-engine',
   'time-machine-vert-theta.vercel.app':'time-machine',
   'parenting-os-eta.vercel.app':       'parenting-os',
+  'mindforge-steel.vercel.app':        'mindforge',
 };
 
 export default async function handler(req) {
