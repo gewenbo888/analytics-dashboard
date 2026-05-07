@@ -107,6 +107,7 @@ const PSYVERSE_MAP = {
   'mindforge.psyverse.fun':   'mindforge',
   'awaken-os.psyverse.fun':   'awaken-os',
   'clarity-os.psyverse.fun':  'clarity-os',
+  'self-construction-os.psyverse.fun': 'self-construction-os',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
