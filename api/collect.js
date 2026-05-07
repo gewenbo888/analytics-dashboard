@@ -116,6 +116,7 @@ const PSYVERSE_MAP = {
   'oceanic-civilization.psyverse.fun': 'oceanic-civilization',
   'the-human-library.psyverse.fun':    'the-human-library',
   'yellow-river-frontier.psyverse.fun':'yellow-river-frontier',
+  'techne.psyverse.fun':               'techne',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
@@ -138,6 +139,7 @@ const VERCEL_MAP = {
   'mindforge-steel.vercel.app':        'mindforge',
   'awaken-os-ten.vercel.app':          'awaken-os',
   'clarity-os-one.vercel.app':         'clarity-os',
+  'techne-six.vercel.app':             'techne',
 };
 
 export default async function handler(req) {
