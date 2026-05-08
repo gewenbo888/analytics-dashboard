@@ -114,6 +114,7 @@ const PSYVERSE_MAP = {
   'steppe-empire.psyverse.fun':        'steppe-empire',
   'human-future-atlas.psyverse.fun':   'human-future-atlas',
   'climate-civilization.psyverse.fun': 'climate-civilization',
+  'states-of-reality.psyverse.fun':    'states-of-reality',
   'oceanic-civilization.psyverse.fun': 'oceanic-civilization',
   'the-human-library.psyverse.fun':    'the-human-library',
   'yellow-river-frontier.psyverse.fun':'yellow-river-frontier',
