@@ -124,6 +124,7 @@ const PSYVERSE_MAP = {
   'cryptocivilization.psyverse.fun':   'cryptocivilization',
   'neolithic-world.psyverse.fun':      'neolithic-world',
   'elements-of-civilization.psyverse.fun': 'elements-of-civilization',
+  'pacific-rim-ports.psyverse.fun':    'pacific-rim-ports',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
