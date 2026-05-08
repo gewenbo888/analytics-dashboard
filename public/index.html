@@ -390,7 +390,6 @@ const PROJECT_META = {
   'clarity-os_psyverse_fun':           { gh: 'gewenbo888/clarity-os',            vercel: 'clarity-os-one.vercel.app',            custom: 'clarity-os.psyverse.fun',   label: 'From Chaos to Clarity · 由乱入定' },
   'self-construction-os_psyverse_fun': { gh: 'gewenbo888/self-construction-os',  vercel: 'self-construction-os.vercel.app',      custom: 'self-construction-os.psyverse.fun', label: 'Self-Construction OS · 自我构建' },
   'agency-genesis_psyverse_fun':       { gh: 'gewenbo888/agency-genesis',        vercel: 'agency-genesis.vercel.app',            custom: 'agency-genesis.psyverse.fun', label: 'Agency Genesis · 主体性创世' },
-  'dongbei-renaissance_psyverse_fun':  { gh: 'gewenbo888/dongbei-renaissance',   vercel: 'dongbei-renaissance.vercel.app',       custom: 'dongbei-renaissance.psyverse.fun', label: 'Dongbei Renaissance · 东北文艺复兴' },
   'human-future-atlas':                { gh: 'gewenbo888/human-future-atlas',    vercel: 'human-future-atlas.vercel.app',        custom: 'human-future-atlas.psyverse.fun', label: 'The Human Future Atlas · 人类未来图谱' },
   'the-human-library':                 { gh: 'gewenbo888/the-human-library',     vercel: 'the-human-library.vercel.app',         custom: 'the-human-library.psyverse.fun', label: 'The Human Library · 人类图书馆' },
   'climate-civilization':              { gh: 'gewenbo888/climate-civilization',  vercel: 'climate-civilization.vercel.app',      custom: 'climate-civilization.psyverse.fun', label: 'Climate & Civilization · 气候与文明' },
@@ -606,7 +605,17 @@ function renderOverview(data) {
         <thead><tr><th>Project</th><th>7-Day Trend</th><th>Links 链接</th><th>Today</th><th>Total</th></tr></thead>
         <tbody>`;
 
-  data.projects.forEach((p, i) => {
+  // Drop orphan keys (e.g. "dongbei-renaissance_psyverse_fun") that duplicate
+  // an existing canonical key. These are created when the tracker fires before
+  // PSYVERSE_MAP is deployed and the collect.js fallback substitutes "." → "_".
+  const canonicalKeys = new Set(data.projects.map(p => p.project));
+  const visibleProjects = data.projects.filter(p => {
+    if (!p.project.endsWith('_psyverse_fun')) return true;
+    const canonical = p.project.replace(/_psyverse_fun$/, '');
+    return !canonicalKeys.has(canonical);
+  });
+
+  visibleProjects.forEach((p, i) => {
     const vals = p.last7.map(d => d.views);
     const m = getMeta(p.project);
     const label = m ? m.label : p.project;
@@ -765,7 +774,13 @@ async function init() {
   // Populate sidebar
   const container = document.getElementById('sidebarProjects');
   if (data && data.projects && data.projects.length) {
-    container.innerHTML = data.projects.map((p, i) => {
+    // Same orphan filter as the main projects table.
+    const canonicalKeys = new Set(data.projects.map(p => p.project));
+    const sbProjects = data.projects.filter(p => {
+      if (!p.project.endsWith('_psyverse_fun')) return true;
+      return !canonicalKeys.has(p.project.replace(/_psyverse_fun$/, ''));
+    });
+    container.innerHTML = sbProjects.map((p, i) => {
       const m = getMeta(p.project);
       const label = m ? m.label : p.project;
       return `<div class="sb-item" data-project="${p.project}" onclick="selectProject('${p.project}')">
