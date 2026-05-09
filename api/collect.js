@@ -163,6 +163,7 @@ const VERCEL_MAP = {
   'clarity-os-one.vercel.app':         'clarity-os',
   'techne-six.vercel.app':             'techne',
   'sentience-six.vercel.app':          'sentience',
+  'civilization-os-blush.vercel.app':  'civilization-os',
 };
 
 export default async function handler(req) {
