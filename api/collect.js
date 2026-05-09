@@ -6,6 +6,7 @@ export const config = { runtime: 'edge' };
 const PSYVERSE_MAP = {
   'psyverse.fun':             'gewenbo-manifesto',
   'manifesto.psyverse.fun':   'gewenbo-manifesto',
+  'idea-evolution.psyverse.fun': 'idea-evolution',
   'hub.psyverse.fun':         'gewenbo-hub',
   'links.psyverse.fun':       'gewenbo-links',
   'blog.psyverse.fun':        'gewenbo-blog',
