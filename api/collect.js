@@ -135,6 +135,7 @@ const PSYVERSE_MAP = {
   'sentience.psyverse.fun':            'sentience',
   'evolution-of-eyes.psyverse.fun':    'evolution-of-eyes',
   'psy-spec.psyverse.fun':             'psy-spec',
+  'cognitive-civilization.psyverse.fun': 'cognitive-civilization',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
