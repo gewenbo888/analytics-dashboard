@@ -132,6 +132,7 @@ const PSYVERSE_MAP = {
   'mountain-merchants.psyverse.fun':   'mountain-merchants',
   'psy-killer-apps.psyverse.fun':      'psy-killer-apps',
   'psy-civilization.psyverse.fun':     'psy-civilization',
+  'sentience.psyverse.fun':            'sentience',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
@@ -155,6 +156,7 @@ const VERCEL_MAP = {
   'awaken-os-ten.vercel.app':          'awaken-os',
   'clarity-os-one.vercel.app':         'clarity-os',
   'techne-six.vercel.app':             'techne',
+  'sentience-six.vercel.app':          'sentience',
 };
 
 export default async function handler(req) {
