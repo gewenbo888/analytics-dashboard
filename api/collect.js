@@ -216,6 +216,7 @@ const VERCEL_MAP = {
   'sentience-six.vercel.app':          'sentience',
   'civilization-os-blush.vercel.app':  'civilization-os',
   'last-seen-fawn.vercel.app':         'last-seen',
+  'humanity-os-sandy.vercel.app':      'humanity-os',
 };
 
 export default async function handler(req) {
