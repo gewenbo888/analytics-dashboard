@@ -179,6 +179,17 @@ const PSYVERSE_MAP = {
   'failure-museum.psyverse.fun':              'failure-museum',
   'knowledge-compression-engine.psyverse.fun':'knowledge-compression-engine',
   'human-memory-project.psyverse.fun':        'human-memory-project',
+  // — civilization startup lab (10 AI-native platforms) —
+  'reality-engine.psyverse.fun':              'reality-engine',
+  'invisible-systems.psyverse.fun':           'invisible-systems',
+  'digital-species.psyverse.fun':             'digital-species',
+  'memory-atlas.psyverse.fun':                'memory-atlas',
+  'collapse-watch.psyverse.fun':              'collapse-watch',
+  'ai-universe.psyverse.fun':                 'ai-universe',
+  'human-os.psyverse.fun':                    'human-os',
+  'future-economy.psyverse.fun':              'future-economy',
+  'intelligence-network.psyverse.fun':        'intelligence-network',
+  'synthetic-history.psyverse.fun':           'synthetic-history',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
