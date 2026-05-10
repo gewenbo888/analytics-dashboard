@@ -154,6 +154,16 @@ const PSYVERSE_MAP = {
   'decision-os.psyverse.fun':                 'decision-os',
   'cycle-engine.psyverse.fun':                'cycle-engine',
   'life-os.psyverse.fun':                     'life-os',
+  'mask-engine.psyverse.fun':                 'mask-engine',
+  'attraction-lab.psyverse.fun':              'attraction-lab',
+  'dream-foundry.psyverse.fun':               'dream-foundry',
+  'parallel-life.psyverse.fun':               'parallel-life',
+  'internet-tribes.psyverse.fun':             'internet-tribes',
+  'persona-engine.psyverse.fun':              'persona-engine',
+  'desire-atlas.psyverse.fun':                'desire-atlas',
+  'life-cinematic.psyverse.fun':              'life-cinematic',
+  'social-temperature.psyverse.fun':          'social-temperature',
+  'chaos-simulator.psyverse.fun':             'chaos-simulator',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
