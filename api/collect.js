@@ -165,6 +165,7 @@ const PSYVERSE_MAP = {
   'social-temperature.psyverse.fun':          'social-temperature',
   'chaos-simulator.psyverse.fun':             'chaos-simulator',
   'last-seen.psyverse.fun':                   'last-seen',
+  'inner-monologue.psyverse.fun':             'inner-monologue',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
