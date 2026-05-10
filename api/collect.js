@@ -166,6 +166,7 @@ const PSYVERSE_MAP = {
   'chaos-simulator.psyverse.fun':             'chaos-simulator',
   'last-seen.psyverse.fun':                   'last-seen',
   'inner-monologue.psyverse.fun':             'inner-monologue',
+  'fusion-os.psyverse.fun':                   'fusion-os',
   'ai-replacement-map.psyverse.fun':          'ai-replacement-map',
   // — civlab ecosystem (10 platforms + hub) —
   'civlab.psyverse.fun':                      'civlab',
@@ -229,6 +230,7 @@ const VERCEL_MAP = {
   'civilization-os-blush.vercel.app':  'civilization-os',
   'last-seen-fawn.vercel.app':         'last-seen',
   'humanity-os-sandy.vercel.app':      'humanity-os',
+  'fusion-os-beta.vercel.app':         'fusion-os',
 };
 
 export default async function handler(req) {
