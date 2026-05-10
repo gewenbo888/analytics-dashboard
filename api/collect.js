@@ -164,6 +164,7 @@ const PSYVERSE_MAP = {
   'life-cinematic.psyverse.fun':              'life-cinematic',
   'social-temperature.psyverse.fun':          'social-temperature',
   'chaos-simulator.psyverse.fun':             'chaos-simulator',
+  'last-seen.psyverse.fun':                   'last-seen',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
@@ -189,6 +190,7 @@ const VERCEL_MAP = {
   'techne-six.vercel.app':             'techne',
   'sentience-six.vercel.app':          'sentience',
   'civilization-os-blush.vercel.app':  'civilization-os',
+  'last-seen-fawn.vercel.app':         'last-seen',
 };
 
 export default async function handler(req) {
