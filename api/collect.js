@@ -166,6 +166,7 @@ const PSYVERSE_MAP = {
   'chaos-simulator.psyverse.fun':             'chaos-simulator',
   'last-seen.psyverse.fun':                   'last-seen',
   'inner-monologue.psyverse.fun':             'inner-monologue',
+  'ai-replacement-map.psyverse.fun':          'ai-replacement-map',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
