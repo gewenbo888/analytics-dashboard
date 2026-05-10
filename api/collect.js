@@ -203,6 +203,7 @@ const PSYVERSE_MAP = {
   'robot-civilization-observatory.psyverse.fun':   'robot-civilization-observatory',
   'brain-computer-interface-world.psyverse.fun':   'brain-computer-interface-world',
   'reality-simulation-engine.psyverse.fun':        'reality-simulation-engine',
+  'chrono-void.psyverse.fun':                      'chrono-void',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
