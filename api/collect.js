@@ -215,6 +215,10 @@ const PSYVERSE_MAP = {
   'daofaziran.vercel.app':                         'daofaziran',
   'civilization-stack.psyverse.fun':               'civilization-stack',
   'civilization-stack.vercel.app':                 'civilization-stack',
+  'cosmos-to-code.psyverse.fun':                   'cosmos-to-code',
+  'cosmos-to-code.vercel.app':                     'cosmos-to-code',
+  'five-frontiers.psyverse.fun':                   'five-frontiers',
+  'five-frontiers.vercel.app':                     'five-frontiers',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
