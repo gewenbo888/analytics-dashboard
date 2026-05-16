@@ -4,6 +4,7 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'sanyuan.psyverse.fun':     'sanyuan',
   'selfcraft.psyverse.fun':   'selfcraft',
   'mind-vs-machine.psyverse.fun': 'mind-vs-machine',
   'ten-heavens.psyverse.fun': 'ten-heavens',
@@ -227,12 +228,15 @@ const PSYVERSE_MAP = {
   'north-rules-south.vercel.app':                  'north-rules-south',
   'minimum-units.psyverse.fun':                    'minimum-units',
   'minimum-units.vercel.app':                      'minimum-units',
+  'seven-tongues.psyverse.fun':                    'seven-tongues',
+  'seven-tongues.vercel.app':                      'seven-tongues',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
 // Without this, visits to the bare vercel.app URL get logged under the suffixed name
 // and the dashboard can't find PROJECT_META. Added retroactively April 2026.
 const VERCEL_MAP = {
+  'sanyuan-tau.vercel.app':            'sanyuan',
   'libertarian-jade.vercel.app':       'libertarian',
   'mindseye-kappa.vercel.app':         'mindseye',
   'skills-showcase-livid.vercel.app':  'skills-showcase',
