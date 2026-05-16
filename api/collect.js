@@ -213,6 +213,8 @@ const PSYVERSE_MAP = {
   'value-planes.psyverse.fun':                     'value-planes',
   'daofaziran.psyverse.fun':                       'daofaziran',
   'daofaziran.vercel.app':                         'daofaziran',
+  'civilization-stack.psyverse.fun':               'civilization-stack',
+  'civilization-stack.vercel.app':                 'civilization-stack',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
