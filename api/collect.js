@@ -203,6 +203,7 @@ const PSYVERSE_MAP = {
   'civtech.psyverse.fun':                          'civtech',
   'ai-scientist-lab.psyverse.fun':                 'ai-scientist-lab',
   'chip-war-atlas.psyverse.fun':                   'chip-war-atlas',
+  'imitation-atlas.psyverse.fun':                  'imitation-atlas',
   'future-materials-database.psyverse.fun':        'future-materials-database',
   'civilization-tech-tree.psyverse.fun':           'civilization-tech-tree',
   'quantum-computing-visualizer.psyverse.fun':     'quantum-computing-visualizer',
@@ -232,6 +233,8 @@ const PSYVERSE_MAP = {
   'seven-tongues.vercel.app':                      'seven-tongues',
   '16-frontiers.psyverse.fun':                     '16-frontiers',
   '16-frontiers.vercel.app':                       '16-frontiers',
+  'innovation-engines.psyverse.fun':               'innovation-engines',
+  'innovation-engines.vercel.app':                 'innovation-engines',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
