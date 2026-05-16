@@ -246,6 +246,8 @@ const PSYVERSE_MAP = {
   'five-horizons.vercel.app':                      'five-horizons',
   'mirror-civilizations.psyverse.fun':             'mirror-civilizations',
   'mirror-civilizations.vercel.app':               'mirror-civilizations',
+  'read-every-book.psyverse.fun':                  'read-every-book',
+  'read-every-book.vercel.app':                    'read-every-book',
   'tech-cosmos.psyverse.fun':                      'tech-cosmos',
   'tech-cosmos.vercel.app':                        'tech-cosmos',
 };
