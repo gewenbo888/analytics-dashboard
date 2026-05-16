@@ -191,6 +191,7 @@ const PSYVERSE_MAP = {
   'future-economy.psyverse.fun':              'future-economy',
   'intelligence-network.psyverse.fun':        'intelligence-network',
   'synthetic-history.psyverse.fun':           'synthetic-history',
+  'beyond-matter.psyverse.fun':               'beyond-matter',
   // — civtech ecosystem (10 platforms + hub) —
   'civtech.psyverse.fun':                          'civtech',
   'ai-scientist-lab.psyverse.fun':                 'ai-scientist-lab',
@@ -204,6 +205,9 @@ const PSYVERSE_MAP = {
   'brain-computer-interface-world.psyverse.fun':   'brain-computer-interface-world',
   'reality-simulation-engine.psyverse.fun':        'reality-simulation-engine',
   'chrono-void.psyverse.fun':                      'chrono-void',
+  'five-worlds.psyverse.fun':                      'five-worlds',
+  'suyu.psyverse.fun':                             'suyu',
+  'five-challenges.psyverse.fun':                  'five-challenges',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.

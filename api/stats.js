@@ -2,9 +2,15 @@ import { kv } from '@vercel/kv';
 
 export const config = { runtime: 'edge' };
 
+const CORS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+};
+
 export default async function handler(req) {
   if (req.method === 'OPTIONS') {
-    return new Response(null, { status: 204 });
+    return new Response(null, { status: 204, headers: CORS });
   }
 
   const url = new URL(req.url);
@@ -21,53 +27,53 @@ export default async function handler(req) {
     // If no project specified, return overview of all projects
     if (!project) {
       const projects = await kv.smembers('projects');
-      const overview = [];
 
+      // Batch all reads into one pipeline — N projects used to do 2N
+      // sequential round-trips, which timed out the Edge function once
+      // we tracked ~200+ sites.
+      const pipe = kv.pipeline();
       for (const p of projects) {
-        const pvData = await kv.hgetall(`pv:${p}`) || {};
-        const total = pvData.total || 0;
-
-        // Get last 7 days
-        const dailyData = await kv.hgetall(`pv:${p}:daily`) || {};
-        const last7 = [];
-        for (let i = 6; i >= 0; i--) {
-          const d = new Date();
-          d.setDate(d.getDate() - i);
-          const key = d.toISOString().slice(0, 10);
-          last7.push({ date: key, views: dailyData[key] || 0 });
-        }
-
-        const today = new Date().toISOString().slice(0, 10);
-        const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
-
-        overview.push({
-          project: p,
-          total: Number(total),
-          today: Number(dailyData[today] || 0),
-          yesterday: Number(dailyData[yesterday] || 0),
-          last7,
-        });
+        pipe.hgetall(`pv:${p}`);
+        pipe.hgetall(`pv:${p}:daily`);
       }
+      pipe.hgetall('pv:global:daily');
+      const results = await pipe.exec();
 
-      // Sort by total descending
-      overview.sort((a, b) => b.total - a.total);
-
-      // Global daily
-      const globalDaily = await kv.hgetall('pv:global:daily') || {};
-      const globalLast7 = [];
+      const today = new Date().toISOString().slice(0, 10);
+      const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+      const last7Keys = [];
       for (let i = 6; i >= 0; i--) {
         const d = new Date();
         d.setDate(d.getDate() - i);
-        const key = d.toISOString().slice(0, 10);
-        globalLast7.push({ date: key, views: Number(globalDaily[key] || 0) });
+        last7Keys.push(d.toISOString().slice(0, 10));
       }
+
+      const overview = projects.map((p, i) => {
+        const pvData = results[i * 2] || {};
+        const dailyData = results[i * 2 + 1] || {};
+        return {
+          project: p,
+          total: Number(pvData.total || 0),
+          today: Number(dailyData[today] || 0),
+          yesterday: Number(dailyData[yesterday] || 0),
+          last7: last7Keys.map((key) => ({ date: key, views: Number(dailyData[key] || 0) })),
+        };
+      });
+
+      overview.sort((a, b) => b.total - a.total);
+
+      const globalDaily = results[projects.length * 2] || {};
+      const globalLast7 = last7Keys.map((key) => ({
+        date: key,
+        views: Number(globalDaily[key] || 0),
+      }));
 
       return new Response(JSON.stringify({
         projects: overview,
         globalDaily: globalLast7,
         totalProjects: projects.length,
       }), {
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', ...CORS },
       });
     }
 
@@ -121,10 +127,10 @@ export default async function handler(req) {
       devices: sortObj(device),
       languages: sortObj(lang),
     }), {
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...CORS },
     });
   } catch (err) {
     console.error('Stats error:', err);
-    return new Response(JSON.stringify({ error: 'Internal error', details: err.message }), { status: 500 });
+    return new Response(JSON.stringify({ error: 'Internal error', details: err.message }), { status: 500, headers: CORS });
   }
 }
