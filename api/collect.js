@@ -66,6 +66,7 @@ const PSYVERSE_MAP = {
   'tech-migration.psyverse.fun':  'tech-migration',
   'beyond-tech.psyverse.fun':     'beyond-tech',
   'x-playbook.psyverse.fun':      'x-playbook',
+  'deep-stack.psyverse.fun':      'deep-stack',
   'idc.psyverse.fun':         'china-idc-ranking',
   'heat.psyverse.fun':        'heating-comparison',
   'privacy.psyverse.fun':     'privacy-zk-landscape',
