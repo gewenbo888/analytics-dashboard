@@ -219,6 +219,8 @@ const PSYVERSE_MAP = {
   'cosmos-to-code.vercel.app':                     'cosmos-to-code',
   'five-frontiers.psyverse.fun':                   'five-frontiers',
   'five-frontiers.vercel.app':                     'five-frontiers',
+  'north-rules-south.psyverse.fun':                'north-rules-south',
+  'north-rules-south.vercel.app':                  'north-rules-south',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
