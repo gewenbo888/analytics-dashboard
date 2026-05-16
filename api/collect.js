@@ -192,6 +192,7 @@ const PSYVERSE_MAP = {
   'intelligence-network.psyverse.fun':        'intelligence-network',
   'synthetic-history.psyverse.fun':           'synthetic-history',
   'beyond-matter.psyverse.fun':               'beyond-matter',
+  'greatest-ideas.psyverse.fun':              'greatest-ideas',
   // — civtech ecosystem (10 platforms + hub) —
   'civtech.psyverse.fun':                          'civtech',
   'ai-scientist-lab.psyverse.fun':                 'ai-scientist-lab',
