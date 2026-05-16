@@ -223,6 +223,8 @@ const PSYVERSE_MAP = {
   'five-frontiers.vercel.app':                     'five-frontiers',
   'north-rules-south.psyverse.fun':                'north-rules-south',
   'north-rules-south.vercel.app':                  'north-rules-south',
+  'minimum-units.psyverse.fun':                    'minimum-units',
+  'minimum-units.vercel.app':                      'minimum-units',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
