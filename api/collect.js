@@ -230,6 +230,8 @@ const PSYVERSE_MAP = {
   'minimum-units.vercel.app':                      'minimum-units',
   'seven-tongues.psyverse.fun':                    'seven-tongues',
   'seven-tongues.vercel.app':                      'seven-tongues',
+  '16-frontiers.psyverse.fun':                     '16-frontiers',
+  '16-frontiers.vercel.app':                       '16-frontiers',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
