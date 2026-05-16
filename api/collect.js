@@ -241,6 +241,8 @@ const PSYVERSE_MAP = {
   'five-horizons.vercel.app':                      'five-horizons',
   'mirror-civilizations.psyverse.fun':             'mirror-civilizations',
   'mirror-civilizations.vercel.app':               'mirror-civilizations',
+  'tech-cosmos.psyverse.fun':                      'tech-cosmos',
+  'tech-cosmos.vercel.app':                        'tech-cosmos',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
