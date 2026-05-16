@@ -61,6 +61,7 @@ const PSYVERSE_MAP = {
   'figures.psyverse.fun':     'figures-rank',
   'arena.psyverse.fun':       'ai-arena',
   'psy.psyverse.fun':         'psy-protocol-site',
+  'psy-research.psyverse.fun':'psy-research',
   'idc.psyverse.fun':         'china-idc-ranking',
   'heat.psyverse.fun':        'heating-comparison',
   'privacy.psyverse.fun':     'privacy-zk-landscape',
