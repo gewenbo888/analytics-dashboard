@@ -65,6 +65,7 @@ const PSYVERSE_MAP = {
   'silicon-ideology.psyverse.fun':'silicon-ideology',
   'tech-migration.psyverse.fun':  'tech-migration',
   'beyond-tech.psyverse.fun':     'beyond-tech',
+  'x-playbook.psyverse.fun':      'x-playbook',
   'idc.psyverse.fun':         'china-idc-ranking',
   'heat.psyverse.fun':        'heating-comparison',
   'privacy.psyverse.fun':     'privacy-zk-landscape',
