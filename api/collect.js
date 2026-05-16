@@ -211,6 +211,8 @@ const PSYVERSE_MAP = {
   'suyu.psyverse.fun':                             'suyu',
   'five-challenges.psyverse.fun':                  'five-challenges',
   'value-planes.psyverse.fun':                     'value-planes',
+  'daofaziran.psyverse.fun':                       'daofaziran',
+  'daofaziran.vercel.app':                         'daofaziran',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
