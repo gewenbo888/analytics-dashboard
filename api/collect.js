@@ -66,6 +66,7 @@ const PSYVERSE_MAP = {
   'tech-migration.psyverse.fun':  'tech-migration',
   'beyond-tech.psyverse.fun':     'beyond-tech',
   'x-playbook.psyverse.fun':      'x-playbook',
+  'meta-civilization.psyverse.fun':'meta-civilization',
   'deep-stack.psyverse.fun':      'deep-stack',
   'electric-civilization.psyverse.fun': 'electric-civilization',
   'invisible-flows.psyverse.fun':     'invisible-flows',
