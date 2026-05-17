@@ -266,6 +266,8 @@ const PSYVERSE_MAP = {
   'dream-machine-snowy.vercel.app':                'dream-machine',
   'happy-crush.psyverse.fun':                      'happy-crush',
   'happy-crush.vercel.app':                        'happy-crush',
+  'sauce-civilization.psyverse.fun':               'sauce-civilization',
+  'sauce-civilization.vercel.app':                 'sauce-civilization',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
