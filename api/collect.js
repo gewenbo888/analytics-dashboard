@@ -70,6 +70,7 @@ const PSYVERSE_MAP = {
   'electric-civilization.psyverse.fun': 'electric-civilization',
   'invisible-flows.psyverse.fun':     'invisible-flows',
   'token-civilization.psyverse.fun':  'token-civilization',
+  'civilization-kernel.psyverse.fun': 'civilization-kernel',
   'idc.psyverse.fun':         'china-idc-ranking',
   'heat.psyverse.fun':        'heating-comparison',
   'privacy.psyverse.fun':     'privacy-zk-landscape',
