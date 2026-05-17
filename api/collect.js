@@ -253,6 +253,8 @@ const PSYVERSE_MAP = {
   'mirror-civilizations.vercel.app':               'mirror-civilizations',
   'read-every-book.psyverse.fun':                  'read-every-book',
   'read-every-book.vercel.app':                    'read-every-book',
+  'reality-stack.psyverse.fun':                    'reality-stack',
+  'reality-stack.vercel.app':                      'reality-stack',
   'tech-cosmos.psyverse.fun':                      'tech-cosmos',
   'tech-cosmos.vercel.app':                        'tech-cosmos',
 };
