@@ -73,6 +73,7 @@ const PSYVERSE_MAP = {
   'token-civilization.psyverse.fun':  'token-civilization',
   'civilization-kernel.psyverse.fun': 'civilization-kernel',
   'shenzhen-velocity.psyverse.fun':   'shenzhen-velocity',
+  'vision-stack.psyverse.fun':        'vision-stack',
   'planetary-brain.psyverse.fun': 'planetary-brain',
   'idc.psyverse.fun':         'china-idc-ranking',
   'heat.psyverse.fun':        'heating-comparison',
