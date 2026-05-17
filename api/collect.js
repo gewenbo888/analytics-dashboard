@@ -72,6 +72,7 @@ const PSYVERSE_MAP = {
   'invisible-flows.psyverse.fun':     'invisible-flows',
   'token-civilization.psyverse.fun':  'token-civilization',
   'civilization-kernel.psyverse.fun': 'civilization-kernel',
+  'planetary-brain.psyverse.fun': 'planetary-brain',
   'idc.psyverse.fun':         'china-idc-ranking',
   'heat.psyverse.fun':        'heating-comparison',
   'privacy.psyverse.fun':     'privacy-zk-landscape',
