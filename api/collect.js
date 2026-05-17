@@ -258,6 +258,8 @@ const PSYVERSE_MAP = {
   'reality-stack.vercel.app':                      'reality-stack',
   'tech-cosmos.psyverse.fun':                      'tech-cosmos',
   'tech-cosmos.vercel.app':                        'tech-cosmos',
+  'dream-machine.psyverse.fun':                    'dream-machine',
+  'dream-machine-snowy.vercel.app':                'dream-machine',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
