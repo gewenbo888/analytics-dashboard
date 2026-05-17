@@ -68,6 +68,7 @@ const PSYVERSE_MAP = {
   'x-playbook.psyverse.fun':      'x-playbook',
   'deep-stack.psyverse.fun':      'deep-stack',
   'electric-civilization.psyverse.fun': 'electric-civilization',
+  'invisible-flows.psyverse.fun':     'invisible-flows',
   'idc.psyverse.fun':         'china-idc-ranking',
   'heat.psyverse.fun':        'heating-comparison',
   'privacy.psyverse.fun':     'privacy-zk-landscape',
