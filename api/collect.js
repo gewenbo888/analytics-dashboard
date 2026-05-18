@@ -4,6 +4,7 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'elon-observatory.psyverse.fun': 'elon-observatory',
   'sanyuan.psyverse.fun':     'sanyuan',
   'selfcraft.psyverse.fun':   'selfcraft',
   'mind-vs-machine.psyverse.fun': 'mind-vs-machine',
