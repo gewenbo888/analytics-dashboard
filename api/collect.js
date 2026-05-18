@@ -61,6 +61,7 @@ const PSYVERSE_MAP = {
   'figures.psyverse.fun':     'figures-rank',
   'arena.psyverse.fun':       'ai-arena',
   'psy.psyverse.fun':         'psy-protocol-site',
+  'psy-architecture.psyverse.fun':'psy-architecture',
   'psy-research.psyverse.fun':'psy-research',
   'silicon-ideology.psyverse.fun':'silicon-ideology',
   'tech-migration.psyverse.fun':  'tech-migration',
