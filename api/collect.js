@@ -304,6 +304,8 @@ const VERCEL_MAP = {
   'last-seen-fawn.vercel.app':         'last-seen',
   'humanity-os-sandy.vercel.app':      'humanity-os',
   'fusion-os-beta.vercel.app':         'fusion-os',
+  'deep-stack-eight.vercel.app':       'deep-stack',
+  'x-playbook-nine.vercel.app':        'x-playbook',
 };
 
 export default async function handler(req) {
