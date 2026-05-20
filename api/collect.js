@@ -67,6 +67,8 @@ const PSYVERSE_MAP = {
   'silicon-ideology.psyverse.fun':'silicon-ideology',
   'tech-migration.psyverse.fun':  'tech-migration',
   'beyond-tech.psyverse.fun':     'beyond-tech',
+  'origins-of-technology.psyverse.fun': 'origins-of-technology',
+  'origins-of-technology.vercel.app':   'origins-of-technology',
   'x-playbook.psyverse.fun':      'x-playbook',
   'meta-civilization.psyverse.fun':'meta-civilization',
   'deep-stack.psyverse.fun':      'deep-stack',
