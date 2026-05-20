@@ -100,9 +100,7 @@ const PSYVERSE_MAP = {
   'chainmind.psyverse.fun':   'chainmind-psyverse',
   'architect.psyverse.fun':   'architect-psyverse',
   'cognition-gym.psyverse.fun': 'cognition-gym',
-  'mirror.psyverse.fun':      'humanity-mirror',
   'mind-arena.psyverse.fun':  'mind-arena',
-  'reality.psyverse.fun':     'reality-explorer',
   'ethics-engine.psyverse.fun': 'ethics-engine',
   'humanity-os.psyverse.fun': 'humanity-os',
   'truth.psyverse.fun':       'truth-engine',
@@ -277,6 +275,9 @@ const PSYVERSE_MAP = {
   'boredom-architecture.vercel.app':               'boredom-architecture',
   'steam-civilization.psyverse.fun':               'steam-civilization',
   'steam-civilization.vercel.app':                 'steam-civilization',
+  'founders-dilemma.psyverse.fun':                 'founders-dilemma',
+  'founders-dilemma.vercel.app':                   'founders-dilemma',
+  'founders-dilemma-three.vercel.app':             'founders-dilemma',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
