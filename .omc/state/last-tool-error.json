@@ -1,0 +1,7 @@
+{
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"/Users/geir/Downloads/QED资料/litepaper/parth-generic-v1/genesis.json\"}",
+  "error": "File content (512KB) exceeds maximum allowed size (256KB). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+  "timestamp": "2026-05-21T07:45:11.954Z",
+  "retry_count": 1
+}
