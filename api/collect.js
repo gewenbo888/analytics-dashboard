@@ -284,6 +284,8 @@ const PSYVERSE_MAP = {
   'founders-dilemma-three.vercel.app':             'founders-dilemma',
   'alkaloid-atlas.psyverse.fun':                   'alkaloid-atlas',
   'alkaloid-atlas.vercel.app':                     'alkaloid-atlas',
+  'liquid-civilization.psyverse.fun':              'liquid-civilization',
+  'liquid-civilization.vercel.app':                'liquid-civilization',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
