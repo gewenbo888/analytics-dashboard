@@ -257,6 +257,7 @@ function getProjectColor(idx) {
 
 // ── Project metadata (GitHub + Vercel + Custom psyverse.fun links) ──
 const PROJECT_META = {
+  'ai-genesis':                 { gh: 'gewenbo888/ai-genesis',            vercel: 'ai-genesis.vercel.app',                custom: 'ai-genesis.psyverse.fun',   label: 'AI Genesis · AI 创世' },
   'elon-observatory':           { gh: 'gewenbo888/elon-observatory',      vercel: 'elon-observatory.vercel.app',          custom: 'elon-observatory.psyverse.fun', label: 'Elon Observatory · 马斯克观测站' },
   'miletus-engine':             { gh: 'gewenbo888/miletus-engine',        vercel: 'miletus-engine.vercel.app',            custom: 'miletus-engine.psyverse.fun', label: 'Miletus Engine · 米利都引擎' },
   'five-challenges':            { gh: 'gewenbo888/five-challenges',       vercel: 'five-challenges.vercel.app',           custom: 'five-challenges.psyverse.fun', label: 'Five Challenges · 五大挑战' },
@@ -331,6 +332,7 @@ const PROJECT_META = {
   'beyond-tech':                { gh: 'gewenbo888/beyond-tech',           vercel: 'beyond-tech-eosin.vercel.app',         custom: 'beyond-tech.psyverse.fun',      label: 'Beyond Technology · 技术之上' },
   'origins-of-technology':      { gh: 'gewenbo888/origins-of-technology', vercel: 'origins-of-technology.vercel.app',     custom: 'origins-of-technology.psyverse.fun', label: 'The Origins of Technology · 技术的起源' },
   'build-on-psy':               { gh: 'gewenbo888/build-on-psy',          vercel: 'build-on-psy.vercel.app',              custom: 'build-on-psy.psyverse.fun',     label: 'Build on Psy · 在 Psy 上构建' },
+  'hanzi-genesis':              { gh: 'gewenbo888/hanzi-genesis',         vercel: 'hanzi-genesis.vercel.app',             custom: 'hanzi-genesis.psyverse.fun',    label: 'Hanzi Genesis · 汉字源流' },
   'x-playbook':                 { gh: 'gewenbo888/x-playbook',            vercel: 'x-playbook-nine.vercel.app',           custom: 'x-playbook.psyverse.fun',       label: 'The X Playbook · X 发布手册' },
   'meta-civilization':          { gh: 'gewenbo888/meta-civilization',     vercel: 'meta-civilization.vercel.app',         custom: 'meta-civilization.psyverse.fun',label: 'META-CIVILIZATION · 元文明' },
   'deep-stack':                 { gh: 'gewenbo888/deep-stack',            vercel: 'deep-stack-eight.vercel.app',          custom: 'deep-stack.psyverse.fun',       label: 'DEEP · The Seven Layers of Human Capability Evolution' },
@@ -348,6 +350,7 @@ const PROJECT_META = {
   'humanoid-robots-ranking':    { gh: 'gewenbo888/humanoid-robots-ranking', vercel: 'humanoid-robots-ranking.vercel.app', custom: 'humanoids.psyverse.fun',    label: 'Humanoid Robots · Ranked 人形机器人排行' },
   'autonomous-driving-ranking': { gh: 'gewenbo888/autonomous-driving-ranking', vercel: 'autonomous-driving-ranking.vercel.app', custom: 'av.psyverse.fun',     label: 'Autonomous Driving · Ranked 自动驾驶公司排行' },
   'curvature-engine':           { gh: 'gewenbo888/curvature-engine',      vercel: 'curvature-engine.vercel.app',          custom: 'warp.psyverse.fun',         label: 'Curvature Engine 曲率引擎' },
+  'creativity-engine':          { gh: 'gewenbo888/creativity-engine',     vercel: 'creativity-engine.vercel.app',         custom: 'creativity-engine.psyverse.fun', label: 'Creativity Engine · 创造力引擎 — Creativity as Recombination, Novelty & Human Creation Systems' },
   'apes-comparison':            { gh: 'gewenbo888/apes-comparison',       vercel: 'apes-comparison.vercel.app',           custom: 'apes.psyverse.fun',         label: 'Chimp · Bonobo · Human 黑猩猩·倭黑猩猩·人类' },
   'innovators-atlas':           { gh: 'gewenbo888/innovators-atlas',      vercel: 'innovators-atlas.vercel.app',          custom: 'innovators.psyverse.fun',   label: 'The Innovator Atlas 创新者图谱' },
   'the-seeker':                 { gh: 'gewenbo888/the-seeker',            vercel: 'the-seeker-psi.vercel.app',            custom: 'seeker.psyverse.fun',       label: 'The Seeker 探索者' },
@@ -495,7 +498,6 @@ const PROJECT_META = {
   'civtech':                                  { gh: 'gewenbo888/civtech',                                  vercel: 'civtech.vercel.app',                                  custom: 'civtech.psyverse.fun',                                  label: 'civ/tech · Civilization-Scale Lab · 文明级实验室' },
   'ai-scientist-lab':                         { gh: 'gewenbo888/ai-scientist-lab',                         vercel: 'ai-scientist-lab.vercel.app',                         custom: 'ai-scientist-lab.psyverse.fun',                         label: 'civ/tech · AI Scientist Lab · AI 科学家实验室' },
   'chip-war-atlas':                           { gh: 'gewenbo888/chip-war-atlas',                           vercel: 'chip-war-atlas.vercel.app',                           custom: 'chip-war-atlas.psyverse.fun',                           label: 'civ/tech · Chip War Atlas · 芯片战争地图' },
-  'future-materials-database':                { gh: 'gewenbo888/future-materials-database',                vercel: 'future-materials-database.vercel.app',                custom: 'future-materials-database.psyverse.fun',                label: 'civ/tech · Future Materials Database · 未来材料数据库' },
   'civilization-tech-tree':                   { gh: 'gewenbo888/civilization-tech-tree',                   vercel: 'civilization-tech-tree.vercel.app',                   custom: 'civilization-tech-tree.psyverse.fun',                   label: 'civ/tech · Civilization Tech Tree · 文明科技树' },
   'quantum-computing-visualizer':             { gh: 'gewenbo888/quantum-computing-visualizer',             vercel: 'quantum-computing-visualizer.vercel.app',             custom: 'quantum-computing-visualizer.psyverse.fun',             label: 'civ/tech · Quantum Computing Visualizer · 量子计算可视化器' },
   'autonomous-software-civilization':         { gh: 'gewenbo888/autonomous-software-civilization',         vercel: 'autonomous-software-civilization.vercel.app',         custom: 'autonomous-software-civilization.psyverse.fun',         label: 'civ/tech · Autonomous Software Civilization · 自主软件文明' },
