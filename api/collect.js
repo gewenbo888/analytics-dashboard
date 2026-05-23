@@ -6,9 +6,13 @@ export const config = { runtime: 'edge' };
 const PSYVERSE_MAP = {
   'truth-goodness-beauty.psyverse.fun': 'truth-goodness-beauty',
   'truth-goodness-beauty.vercel.app': 'truth-goodness-beauty',
+  'spacetime-engine.psyverse.fun': 'spacetime-engine',
+  'spacetime-engine.vercel.app': 'spacetime-engine',
   'great-convergence.psyverse.fun': 'great-convergence',
   'great-convergence.vercel.app': 'great-convergence',
   'mission-engine.psyverse.fun': 'mission-engine',
+  'consciousness.psyverse.fun': 'consciousness',
+  'consciousness-theta.vercel.app': 'consciousness',
   'energy-engine.psyverse.fun': 'energy-engine',
   'matter-engine.psyverse.fun': 'matter-engine',
   'matter-engine.vercel.app': 'matter-engine',
