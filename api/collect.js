@@ -25,6 +25,8 @@ const PSYVERSE_MAP = {
   'gravity-engine.psyverse.fun': 'gravity-engine',
   'matter-engine.psyverse.fun': 'matter-engine',
   'matter-engine.vercel.app': 'matter-engine',
+  'dimension.psyverse.fun': 'dimension',
+  'dimension-ten.vercel.app': 'dimension',
   'quantum-reality.psyverse.fun': 'quantum-reality',
   'quantum-reality-alpha.vercel.app': 'quantum-reality',
   'elon-observatory.psyverse.fun': 'elon-observatory',
