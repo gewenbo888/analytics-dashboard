@@ -8,6 +8,8 @@ const PSYVERSE_MAP = {
   'truth-goodness-beauty.vercel.app': 'truth-goodness-beauty',
   'spacetime-engine.psyverse.fun': 'spacetime-engine',
   'spacetime-engine.vercel.app': 'spacetime-engine',
+  'flow-state.psyverse.fun': 'flow-state',
+  'flow-state-nine-theta.vercel.app': 'flow-state',
   'great-convergence.psyverse.fun': 'great-convergence',
   'great-convergence.vercel.app': 'great-convergence',
   'mission-engine.psyverse.fun': 'mission-engine',
