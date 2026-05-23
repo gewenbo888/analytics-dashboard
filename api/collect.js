@@ -4,6 +4,8 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'great-convergence.psyverse.fun': 'great-convergence',
+  'great-convergence.vercel.app': 'great-convergence',
   'mission-engine.psyverse.fun': 'mission-engine',
   'elon-observatory.psyverse.fun': 'elon-observatory',
   'miletus-engine.psyverse.fun': 'miletus-engine',
