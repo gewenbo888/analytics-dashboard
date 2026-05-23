@@ -30,6 +30,8 @@ const PSYVERSE_MAP = {
   'wealth-engine-xi.vercel.app': 'wealth-engine',
   'rule-of-law-engine.psyverse.fun': 'rule-of-law-engine',
   'rule-of-law-engine.vercel.app': 'rule-of-law-engine',
+  'human-rights-engine.psyverse.fun': 'human-rights-engine',
+  'human-rights-engine.vercel.app': 'human-rights-engine',
   'gravity-engine.psyverse.fun': 'gravity-engine',
   'matter-engine.psyverse.fun': 'matter-engine',
   'matter-engine.vercel.app': 'matter-engine',
