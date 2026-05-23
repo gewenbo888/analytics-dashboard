@@ -318,6 +318,8 @@ const PSYVERSE_MAP = {
   'founders-dilemma-three.vercel.app':             'founders-dilemma',
   'alkaloid-atlas.psyverse.fun':                   'alkaloid-atlas',
   'alkaloid-atlas.vercel.app':                     'alkaloid-atlas',
+  'happiness-engine.psyverse.fun':                 'happiness-engine',
+  'happiness-engine.vercel.app':                   'happiness-engine',
   'liquid-civilization.psyverse.fun':              'liquid-civilization',
   'liquid-civilization.vercel.app':                'liquid-civilization',
   'creativity-engine.psyverse.fun':                'creativity-engine',
