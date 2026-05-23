@@ -4,12 +4,16 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'health-engine.psyverse.fun': 'health-engine',
+  'health-engine-delta.vercel.app': 'health-engine',
   'essence-of-life.psyverse.fun': 'essence-of-life',
   'essence-of-life.vercel.app': 'essence-of-life',
   'narrative.psyverse.fun': 'narrative',
   'narrative-wine.vercel.app': 'narrative',
   'first-principles.psyverse.fun': 'first-principles',
   'first-principles-rho.vercel.app': 'first-principles',
+  'equality-engine.psyverse.fun': 'equality-engine',
+  'equality-engine.vercel.app': 'equality-engine',
   'truth-goodness-beauty.psyverse.fun': 'truth-goodness-beauty',
   'truth-goodness-beauty.vercel.app': 'truth-goodness-beauty',
   'spacetime-engine.psyverse.fun': 'spacetime-engine',
@@ -22,6 +26,8 @@ const PSYVERSE_MAP = {
   'consciousness.psyverse.fun': 'consciousness',
   'consciousness-theta.vercel.app': 'consciousness',
   'energy-engine.psyverse.fun': 'energy-engine',
+  'rule-of-law-engine.psyverse.fun': 'rule-of-law-engine',
+  'rule-of-law-engine.vercel.app': 'rule-of-law-engine',
   'gravity-engine.psyverse.fun': 'gravity-engine',
   'matter-engine.psyverse.fun': 'matter-engine',
   'matter-engine.vercel.app': 'matter-engine',
