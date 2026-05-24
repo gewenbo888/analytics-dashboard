@@ -363,6 +363,7 @@ const PSYVERSE_MAP = {
 // Without this, visits to the bare vercel.app URL get logged under the suffixed name
 // and the dashboard can't find PROJECT_META. Added retroactively April 2026.
 const VERCEL_MAP = {
+  'gravity-engine-gray.vercel.app':    'gravity-engine',
   'sanyuan-tau.vercel.app':            'sanyuan',
   'libertarian-jade.vercel.app':       'libertarian',
   'mindseye-kappa.vercel.app':         'mindseye',
