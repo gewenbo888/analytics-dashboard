@@ -29,6 +29,8 @@ const PSYVERSE_MAP = {
   'consciousness-theta.vercel.app': 'consciousness',
   'energy-engine.psyverse.fun': 'energy-engine',
   'wealth-engine.psyverse.fun': 'wealth-engine',
+  'product-engine.psyverse.fun': 'product-engine',
+  'product-engine-sand.vercel.app': 'product-engine',
   'need-engine.psyverse.fun': 'need-engine',
   'need-engine.vercel.app': 'need-engine',
   'wealth-engine-xi.vercel.app': 'wealth-engine',
