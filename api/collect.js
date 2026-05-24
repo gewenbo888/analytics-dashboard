@@ -44,6 +44,8 @@ const PSYVERSE_MAP = {
   'rule-of-law-engine.vercel.app': 'rule-of-law-engine',
   'democracy-engine.psyverse.fun': 'democracy-engine',
   'democracy-engine.vercel.app': 'democracy-engine',
+  'service-engine.psyverse.fun': 'service-engine',
+  'service-engine-umber.vercel.app': 'service-engine',
   'human-rights-engine.psyverse.fun': 'human-rights-engine',
   'human-rights-engine.vercel.app': 'human-rights-engine',
   'gravity-engine.psyverse.fun': 'gravity-engine',
