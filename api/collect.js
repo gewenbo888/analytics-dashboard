@@ -4,6 +4,8 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'trend-engine.psyverse.fun': 'trend-engine',
+  'trend-engine-mocha.vercel.app': 'trend-engine',
   'health-engine.psyverse.fun': 'health-engine',
   'health-engine-delta.vercel.app': 'health-engine',
   'essence-of-life.psyverse.fun': 'essence-of-life',
@@ -27,9 +29,13 @@ const PSYVERSE_MAP = {
   'consciousness-theta.vercel.app': 'consciousness',
   'energy-engine.psyverse.fun': 'energy-engine',
   'wealth-engine.psyverse.fun': 'wealth-engine',
+  'need-engine.psyverse.fun': 'need-engine',
+  'need-engine.vercel.app': 'need-engine',
   'wealth-engine-xi.vercel.app': 'wealth-engine',
   'rule-of-law-engine.psyverse.fun': 'rule-of-law-engine',
   'rule-of-law-engine.vercel.app': 'rule-of-law-engine',
+  'democracy-engine.psyverse.fun': 'democracy-engine',
+  'democracy-engine.vercel.app': 'democracy-engine',
   'human-rights-engine.psyverse.fun': 'human-rights-engine',
   'human-rights-engine.vercel.app': 'human-rights-engine',
   'gravity-engine.psyverse.fun': 'gravity-engine',
@@ -409,6 +415,10 @@ export default async function handler(req) {
       project = project.replace(/-[a-z0-9]+-gewenbo888s-projects$/, '');
       project = project.replace(/-gewenbo888s-projects$/, '');
       project = project.replace(/-deploy-.*$/, '');
+      // Unmapped *.psyverse.fun subdomains → use the bare subdomain as the key,
+      // so a pageview arriving before the PSYVERSE_MAP entry is deployed no longer
+      // creates a dot→underscore "name_psyverse_fun" orphan.
+      project = project.replace(/\.psyverse\.fun$/, '');
       project = project.replace(/[^a-zA-Z0-9-]/g, '_');
     }
 
