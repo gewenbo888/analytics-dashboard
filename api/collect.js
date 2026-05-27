@@ -389,6 +389,10 @@ const VERCEL_MAP = {
   'fusion-os-beta.vercel.app':         'fusion-os',
   'deep-stack-eight.vercel.app':       'deep-stack',
   'x-playbook-nine.vercel.app':        'x-playbook',
+  'omnifi-dusky.vercel.app':           'omnifi',
+  'beyond-tech-eosin.vercel.app':      'beyond-tech',
+  'ai-genesis-dun.vercel.app':         'ai-genesis',
+  'energy-engine-alpha.vercel.app':    'energy-engine',
 };
 
 export default async function handler(req) {
