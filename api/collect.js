@@ -357,6 +357,8 @@ const PSYVERSE_MAP = {
   'tech-civilization.vercel.app':                  'tech-civilization',
   'entropy.psyverse.fun':                          'entropy',
   'entropy-self.vercel.app':                       'entropy',
+  'eleven-dimensions.psyverse.fun':                'eleven-dimensions',
+  'eleven-dimensions.vercel.app':                  'eleven-dimensions',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
