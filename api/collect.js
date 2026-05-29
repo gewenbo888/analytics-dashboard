@@ -364,6 +364,8 @@ const PSYVERSE_MAP = {
   'time-travel.vercel.app':                        'time-travel',
   'immortality-engine.psyverse.fun':               'immortality-engine',
   'immortality-engine.vercel.app':                 'immortality-engine',
+  'gene-editing-engine.psyverse.fun':              'gene-editing-engine',
+  'gene-editing-engine.vercel.app':                'gene-editing-engine',
   'bci-engine.psyverse.fun':                       'bci-engine',
   'bci-engine.vercel.app':                         'bci-engine',
   'vr-engine.psyverse.fun':                        'vr-engine',
