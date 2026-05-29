@@ -359,6 +359,9 @@ const PSYVERSE_MAP = {
   'entropy-self.vercel.app':                       'entropy',
   'eleven-dimensions.psyverse.fun':                'eleven-dimensions',
   'eleven-dimensions.vercel.app':                  'eleven-dimensions',
+  'time-travel.psyverse.fun':                      'time-travel',
+  'time-travel-pearl.vercel.app':                  'time-travel',
+  'time-travel.vercel.app':                        'time-travel',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
