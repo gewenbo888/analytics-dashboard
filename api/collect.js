@@ -375,6 +375,8 @@ const PSYVERSE_MAP = {
   'bci-engine.vercel.app':                         'bci-engine',
   'vr-engine.psyverse.fun':                        'vr-engine',
   'vr-engine.vercel.app':                          'vr-engine',
+  'book-of-elon.psyverse.fun':                     'book-of-elon',
+  'book-of-elon.vercel.app':                       'book-of-elon',
   'additive-manufacturing.psyverse.fun':           'additive-manufacturing',
   'additive-manufacturing-alpha.vercel.app':       'additive-manufacturing',
   'additive-manufacturing.vercel.app':             'additive-manufacturing',
