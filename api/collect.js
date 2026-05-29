@@ -362,6 +362,8 @@ const PSYVERSE_MAP = {
   'time-travel.psyverse.fun':                      'time-travel',
   'time-travel-pearl.vercel.app':                  'time-travel',
   'time-travel.vercel.app':                        'time-travel',
+  'immortality-engine.psyverse.fun':               'immortality-engine',
+  'immortality-engine.vercel.app':                 'immortality-engine',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
