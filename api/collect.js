@@ -368,6 +368,9 @@ const PSYVERSE_MAP = {
   'bci-engine.vercel.app':                         'bci-engine',
   'vr-engine.psyverse.fun':                        'vr-engine',
   'vr-engine.vercel.app':                          'vr-engine',
+  'additive-manufacturing.psyverse.fun':           'additive-manufacturing',
+  'additive-manufacturing-alpha.vercel.app':       'additive-manufacturing',
+  'additive-manufacturing.vercel.app':             'additive-manufacturing',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
