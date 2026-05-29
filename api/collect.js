@@ -371,6 +371,8 @@ const PSYVERSE_MAP = {
   'nexus-book.psyverse.fun':                       'nexus-book',
   'nexus-book.vercel.app':                         'nexus-book',
   'nexus-book-sigma.vercel.app':                   'nexus-book',
+  'kangxi-red-letter.psyverse.fun':                'kangxi-red-letter',
+  'kangxi-red-letter.vercel.app':                  'kangxi-red-letter',
   'bci-engine.psyverse.fun':                       'bci-engine',
   'bci-engine.vercel.app':                         'bci-engine',
   'vr-engine.psyverse.fun':                        'vr-engine',
