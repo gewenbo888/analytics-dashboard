@@ -389,6 +389,8 @@ const PSYVERSE_MAP = {
   'steve-jobs.psyverse.fun':                       'steve-jobs',
   'steve-jobs-weld.vercel.app':                    'steve-jobs',
   'steve-jobs.vercel.app':                         'steve-jobs',
+  'chaos-science.psyverse.fun':                    'chaos-science',
+  'chaos-science.vercel.app':                      'chaos-science',
   'additive-manufacturing.psyverse.fun':           'additive-manufacturing',
   'additive-manufacturing-alpha.vercel.app':       'additive-manufacturing',
   'additive-manufacturing.vercel.app':             'additive-manufacturing',
