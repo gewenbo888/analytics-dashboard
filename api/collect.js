@@ -387,6 +387,8 @@ const PSYVERSE_MAP = {
   'additive-manufacturing.vercel.app':             'additive-manufacturing',
   'musk-codex.psyverse.fun':                       'musk-codex',
   'musk-codex.vercel.app':                         'musk-codex',
+  'nietzsche-plato.psyverse.fun':                  'nietzsche-plato',
+  'nietzsche-plato.vercel.app':                    'nietzsche-plato',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
