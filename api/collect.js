@@ -4,6 +4,7 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'genius.psyverse.fun': 'genius',
   'sapiens.psyverse.fun': 'sapiens',
   'sapiens.vercel.app': 'sapiens',
   'idea-of-the-brain.psyverse.fun': 'idea-of-the-brain',
@@ -377,6 +378,8 @@ const PSYVERSE_MAP = {
   'kangxi-red-letter.vercel.app':                  'kangxi-red-letter',
   'rockefeller-letters.psyverse.fun':              'rockefeller-letters',
   'rockefeller-letters.vercel.app':                'rockefeller-letters',
+  'first-cause-books.psyverse.fun':                'first-cause-books',
+  'first-cause-books.vercel.app':                  'first-cause-books',
   'bci-engine.psyverse.fun':                       'bci-engine',
   'bci-engine.vercel.app':                         'bci-engine',
   'vr-engine.psyverse.fun':                        'vr-engine',
@@ -393,6 +396,8 @@ const PSYVERSE_MAP = {
   'musk-codex.vercel.app':                         'musk-codex',
   'nietzsche-plato.psyverse.fun':                  'nietzsche-plato',
   'nietzsche-plato.vercel.app':                    'nietzsche-plato',
+  'hassabis-codex.psyverse.fun':                   'hassabis-codex',
+  'hassabis-codex.vercel.app':                     'hassabis-codex',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
