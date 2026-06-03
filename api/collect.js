@@ -413,6 +413,8 @@ const PSYVERSE_MAP = {
   'nietzsche-plato.vercel.app':                    'nietzsche-plato',
   'hassabis-codex.psyverse.fun':                   'hassabis-codex',
   'hassabis-codex.vercel.app':                     'hassabis-codex',
+  'psy-wallet.psyverse.fun':                       'psy-wallet',
+  'psy-wallet.vercel.app':                         'psy-wallet',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
