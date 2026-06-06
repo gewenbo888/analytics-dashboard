@@ -8,6 +8,8 @@ const PSYVERSE_MAP = {
   'money-engine-eosin.vercel.app': 'money-engine',
   'optics-engine.psyverse.fun': 'optics-engine',
   'optics-engine.vercel.app': 'optics-engine',
+  'spatial-computing.psyverse.fun': 'spatial-computing',
+  'spatial-computing-tan.vercel.app': 'spatial-computing',
   'civilization-engine.psyverse.fun': 'civilization-engine',
   'civilization-engine.vercel.app': 'civilization-engine',
   'statistical-intelligence.psyverse.fun': 'statistical-intelligence',
