@@ -275,9 +275,6 @@ const PSYVERSE_MAP = {
   'failure-museum.psyverse.fun':              'failure-museum',
   'knowledge-compression-engine.psyverse.fun':'knowledge-compression-engine',
   'human-memory-project.psyverse.fun':        'human-memory-project',
-  'reality-explorer.psyverse.fun':            'reality-explorer',
-  'reality.psyverse.fun':                     'reality-explorer',
-  'reality-explorer.vercel.app':              'reality-explorer',
   // — civilization startup lab (10 AI-native platforms) —
   'reality-engine.psyverse.fun':              'reality-engine',
   'invisible-systems.psyverse.fun':           'invisible-systems',
