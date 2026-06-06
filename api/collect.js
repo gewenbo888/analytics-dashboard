@@ -4,6 +4,8 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'money-engine.psyverse.fun': 'money-engine',
+  'money-engine-eosin.vercel.app': 'money-engine',
   'optics-engine.psyverse.fun': 'optics-engine',
   'optics-engine.vercel.app': 'optics-engine',
   'civilization-engine.psyverse.fun': 'civilization-engine',
