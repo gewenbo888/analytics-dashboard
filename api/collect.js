@@ -419,6 +419,7 @@ const PSYVERSE_MAP = {
   'big-picture-khaki.vercel.app':                  'big-picture',
   'big-picture.vercel.app':                        'big-picture',
   'additive-manufacturing.psyverse.fun':           'additive-manufacturing',
+  'beverage-engine.psyverse.fun':                  'beverage-engine',
   'additive-manufacturing-alpha.vercel.app':       'additive-manufacturing',
   'additive-manufacturing.vercel.app':             'additive-manufacturing',
   'musk-codex.psyverse.fun':                       'musk-codex',
