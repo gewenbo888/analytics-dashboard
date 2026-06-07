@@ -4,6 +4,8 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'divergence.psyverse.fun': 'divergence',
+  'divergence-eta.vercel.app': 'divergence',
   'idea-engine.psyverse.fun': 'idea-engine',
   'idea-engine-2.vercel.app': 'idea-engine',
   'absolute-idea-engine.psyverse.fun': 'absolute-idea-engine',
