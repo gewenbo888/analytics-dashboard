@@ -4,6 +4,8 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'shaman.psyverse.fun': 'shaman',
+  'shaman-beryl.vercel.app': 'shaman',
   'divergence.psyverse.fun': 'divergence',
   'divergence-eta.vercel.app': 'divergence',
   'idea-engine.psyverse.fun': 'idea-engine',
@@ -17,6 +19,8 @@ const PSYVERSE_MAP = {
   'optics-engine.psyverse.fun': 'optics-engine',
   'optics-engine.vercel.app': 'optics-engine',
   'spatial-computing.psyverse.fun': 'spatial-computing',
+  'spiritual-universe.psyverse.fun': 'spiritual-universe',
+  'spiritual-universe.vercel.app': 'spiritual-universe',
   'spatial-computing-tan.vercel.app': 'spatial-computing',
   'civilization-engine.psyverse.fun': 'civilization-engine',
   'civilization-engine.vercel.app': 'civilization-engine',
