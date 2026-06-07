@@ -232,6 +232,8 @@ const PSYVERSE_MAP = {
   'southward-migration.psyverse.fun':  'southward-migration',
   'steppe-empire.psyverse.fun':        'steppe-empire',
   'human-future-atlas.psyverse.fun':   'human-future-atlas',
+  'human-factory.psyverse.fun':        'human-factory',
+  'human-factory-eight.vercel.app':    'human-factory',
   'climate-civilization.psyverse.fun': 'climate-civilization',
   'states-of-reality.psyverse.fun':    'states-of-reality',
   'frontier-garrisons.psyverse.fun':   'frontier-garrisons',
