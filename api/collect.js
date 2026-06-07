@@ -117,6 +117,7 @@ const PSYVERSE_MAP = {
   'quantum.psyverse.fun':     'quantum-crypto-three',
   'dance.psyverse.fun':       'tokendance',
   'gosu.psyverse.fun':        'gosu-yu',
+  'gosu-yu-codex.psyverse.fun': 'gosu-yu-codex',
   'libertarian.psyverse.fun': 'libertarian',
   'kol.psyverse.fun':         'crypto-kol',
   'mindseye.psyverse.fun':    'mindseye',
