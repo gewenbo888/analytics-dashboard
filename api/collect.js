@@ -107,6 +107,7 @@ const PSYVERSE_MAP = {
   'regions.psyverse.fun':     'three-regions',
   'roads.psyverse.fun':       'three-roads-agi',
   'tao.psyverse.fun':         'tao-science',
+  'taoism.psyverse.fun':      'taoism',
   'tech.psyverse.fun':        'emerging-tech-nine',
   'aitools.psyverse.fun':     'ai-tools-guide-henna',
   'insights.psyverse.fun':    'ai-insights-beta',
