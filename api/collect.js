@@ -211,6 +211,7 @@ const PSYVERSE_MAP = {
   'awaken-os.psyverse.fun':   'awaken-os',
   'clarity-os.psyverse.fun':  'clarity-os',
   'self-construction-os.psyverse.fun': 'self-construction-os',
+  'self-engine.psyverse.fun': 'self-engine',
   'agency-genesis.psyverse.fun':       'agency-genesis',
   'civilization-waves.psyverse.fun':   'civilization-waves',
   'southward-migration.psyverse.fun':  'southward-migration',
