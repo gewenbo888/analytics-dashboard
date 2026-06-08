@@ -23,6 +23,8 @@ const PSYVERSE_MAP = {
   'optics-engine.psyverse.fun': 'optics-engine',
   'optics-engine.vercel.app': 'optics-engine',
   'spatial-computing.psyverse.fun': 'spatial-computing',
+  'internet-of-agents.psyverse.fun': 'internet-of-agents',
+  'internet-of-agents.vercel.app': 'internet-of-agents',
   'spiritual-universe.psyverse.fun': 'spiritual-universe',
   'spiritual-universe.vercel.app': 'spiritual-universe',
   'spatial-computing-tan.vercel.app': 'spatial-computing',
