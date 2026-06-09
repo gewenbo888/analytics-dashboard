@@ -4,6 +4,8 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'five-elements.psyverse.fun': 'five-elements',
+  'five-elements-three.vercel.app': 'five-elements',
   'human-operating-system.psyverse.fun': 'human-operating-system',
   'human-operating-system-rose.vercel.app': 'human-operating-system',
   'universe-of-ideas.psyverse.fun': 'universe-of-ideas',
