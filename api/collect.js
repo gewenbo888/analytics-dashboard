@@ -483,6 +483,7 @@ const VERCEL_MAP = {
   'beyond-tech-eosin.vercel.app':      'beyond-tech',
   'ai-genesis-dun.vercel.app':         'ai-genesis',
   'energy-engine-alpha.vercel.app':    'energy-engine',
+  'taoism-weld.vercel.app':            'taoism',
 };
 
 export default async function handler(req) {
