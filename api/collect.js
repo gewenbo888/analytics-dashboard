@@ -4,6 +4,10 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'grand-unification.psyverse.fun': 'grand-unification',
+  'grand-unification-two.vercel.app': 'grand-unification',
+  'protocol.psyverse.fun': 'hypothesis-protocol',
+  'hypothesis-protocol.vercel.app': 'hypothesis-protocol',
   'minds-eye.psyverse.fun': 'minds-eye',
   'minds-eye.vercel.app': 'minds-eye',
   'laws-of-reality.psyverse.fun': 'laws-of-reality',
