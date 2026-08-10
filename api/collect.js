@@ -183,6 +183,7 @@ const PSYVERSE_MAP = {
   'hanzi-genesis.psyverse.fun': 'hanzi-genesis',
   'hanzi-genesis.vercel.app':   'hanzi-genesis',
   'x-playbook.psyverse.fun':      'x-playbook',
+  'world-changers.psyverse.fun':  'world-changers',
   'meta-civilization.psyverse.fun':'meta-civilization',
   'deep-stack.psyverse.fun':      'deep-stack',
   'electric-civilization.psyverse.fun': 'electric-civilization',
