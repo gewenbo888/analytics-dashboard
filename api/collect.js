@@ -157,6 +157,7 @@ const PSYVERSE_MAP = {
   'cnkol.psyverse.fun':       'chinese-crypto-kols',
   'skills.psyverse.fun':      'skills-showcase',
   'llms.psyverse.fun':        'llm-models',
+  'ai-founders.psyverse.fun':  'ai-founders',
   'aiapps.psyverse.fun':      'ai-apps-rank',
   'ides.psyverse.fun':        'ides-rank',
   'saas.psyverse.fun':        'saas-rank',
