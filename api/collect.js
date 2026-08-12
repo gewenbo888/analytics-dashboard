@@ -186,6 +186,8 @@ const PSYVERSE_MAP = {
   'x-playbook.psyverse.fun':      'x-playbook',
   'world-changers.psyverse.fun':  'world-changers',
   'china-greats.psyverse.fun':   'china-greats',
+  'browser-agent.psyverse.fun':  'browser-agent',
+  'browser-agent-phi.vercel.app': 'browser-agent',
   'meta-civilization.psyverse.fun':'meta-civilization',
   'deep-stack.psyverse.fun':      'deep-stack',
   'electric-civilization.psyverse.fun': 'electric-civilization',
