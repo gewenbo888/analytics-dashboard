@@ -4,6 +4,8 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'dust-to-civilization.psyverse.fun': 'dust-to-civilization',
+  'dust-to-civilization.vercel.app': 'dust-to-civilization',
   'gravity-garden.psyverse.fun': 'gravity-garden',
   'gravity-garden-six.vercel.app': 'gravity-garden',
   'grand-unification.psyverse.fun': 'grand-unification',
