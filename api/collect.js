@@ -4,6 +4,8 @@ export const config = { runtime: 'edge' };
 
 // psyverse.fun subdomains → canonical project keys (matches existing vercel.app-derived keys)
 const PSYVERSE_MAP = {
+  'memory-flip.psyverse.fun': 'memory-flip',
+  'memory-flip.vercel.app': 'memory-flip',
   'devour.psyverse.fun': 'devour',
   'devour.vercel.app': 'devour',
   'photon-fly.psyverse.fun': 'photon-fly',
