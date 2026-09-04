@@ -135,6 +135,7 @@ const PSYVERSE_MAP = {
   'hub.psyverse.fun':         'gewenbo-hub',
   'links.psyverse.fun':       'gewenbo-links',
   'blog.psyverse.fun':        'gewenbo-blog',
+  'bluefruit.psyverse.fun': 'bluefruit',
   'store.psyverse.fun':       'gewenbo-store',
   'atlas.psyverse.fun':       'global-atlas-lake',
   'civilizations.psyverse.fun':'civilizations-compared',
