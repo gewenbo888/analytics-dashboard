@@ -479,6 +479,8 @@ const PSYVERSE_MAP = {
   'hassabis-codex.vercel.app':                     'hassabis-codex',
   'psy-wallet.psyverse.fun':                       'psy-wallet',
   'psy-wallet.vercel.app':                         'psy-wallet',
+  'genesis.psyverse.fun':                          'psyverse-genesis',
+  'psyverse-genesis.vercel.app':                   'psyverse-genesis',
 };
 
 // vercel.app aliases that Vercel auto-suffixes (-jade, -mu, etc.) → canonical key.
